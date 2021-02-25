@@ -28,7 +28,7 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
@@ -39,6 +39,13 @@ module.exports = (env, options) => {
           use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
+    },
+    resolve: {
+      extensions: ["*", ".js", ".jsx"],
+      alias: {
+        react: path.resolve(__dirname, "./node_modules/react"),
+        "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
+      },
     },
     plugins: [
       new MiniCssExtractPlugin({ filename: "../css/app.css" }),
