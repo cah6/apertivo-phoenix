@@ -14,6 +14,25 @@ defmodule PhoenixGoogleMapTestWeb.PageLive do
   end
 
   @impl true
+  def handle_event("bounds_changed", new_bounds, socket) do
+    %{"south" => s, "north" => n, "east" => e, "west" => w} = new_bounds
+    lat1 = rand_float(s, n)
+    lng1 = rand_float(w, e)
+
+    {
+      :noreply,
+      push_event(socket, "new_map_items", %{
+        a: %{lat: lat1, lng: lng1}
+        # b: %{lat: rand_float(south, north), lng: rand_float(west, east)}
+      })
+    }
+  end
+
+  defp rand_float(min, max) do
+    :random.uniform() * (max - min) + min
+  end
+
+  @impl true
   def handle_event("suggest", %{"q" => query}, socket) do
     {:noreply, assign(socket, results: search(query), query: query)}
   end
