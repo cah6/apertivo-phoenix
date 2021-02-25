@@ -3,7 +3,12 @@ defmodule PhoenixGoogleMapTestWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, query: "", results: %{})}
+    map_api_key =
+      Application.get_env(:phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint)[
+        :google_maps_api_key
+      ]
+
+    {:ok, assign(socket, query: "", results: %{}, map_api_key: map_api_key)}
   end
 
   @impl true

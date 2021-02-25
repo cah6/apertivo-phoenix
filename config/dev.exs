@@ -2,9 +2,6 @@ use Mix.Config
 
 # Configure your database
 config :phoenix_google_map_test, PhoenixGoogleMapTest.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "phoenix_google_map_test_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -74,3 +71,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+import_config "dev.secret.exs"
