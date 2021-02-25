@@ -1,4 +1,6 @@
 defmodule PhoenixGoogleMapTestWeb.PageLive do
+  import PhoenixLiveReact
+
   use PhoenixGoogleMapTestWeb, :live_view
 
   @impl true

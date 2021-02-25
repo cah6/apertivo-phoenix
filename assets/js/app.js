@@ -17,6 +17,7 @@ import { Socket } from "phoenix";
 import NProgress from "nprogress";
 import { LiveSocket } from "phoenix_live_view";
 import LiveReact, { initLiveReact } from "phoenix_live_react";
+import GoogleMapWrapper from "./components/GoogleMapWrapper";
 
 let hooks = { LiveReact };
 
@@ -32,6 +33,10 @@ let liveSocket = new LiveSocket("/live", Socket, {
 window.addEventListener("phx:page-loading-start", (info) => NProgress.start());
 window.addEventListener("phx:page-loading-stop", (info) => NProgress.done());
 
+window.Components = {
+  GoogleMapWrapper,
+};
+
 // connect if there are any LiveViews on the page
 liveSocket.connect();
 
@@ -40,7 +45,3 @@ liveSocket.connect();
 // >> liveSocket.enableLatencySim(1000)  // enabled for duration of browser session
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket;
-
-document.addEventListener("DOMContentLoaded", (e) => {
-  initLiveReact();
-});

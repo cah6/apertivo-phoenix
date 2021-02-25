@@ -1,7 +1,7 @@
-<section class="row" phx-update="ignore">
-  <div id="map" class="column">
-  </div>
-</section>
+<%# load up google map library with server key %>
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=initMap" defer></script>
+
+<%= live_react_component("Components.GoogleMapWrapper", %{}, id: "google-map-wrapper-1") %>
 
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
@@ -52,29 +52,3 @@
     </ul>
   </article>
 </section>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=initMap" defer>
-</script>
-
-<script>
-  (function (exports) {
-    "use strict";
-
-    function initMap() {
-      // we store the google map object on the window so that hooks can later access it
-      exports.map = new google.maps.Map(document.getElementById("map"), {
-        center: {
-          lat: -34.397,
-          lng: 150.644
-        },
-        zoom: 5
-      });
-
-      map.addListener("dragend", () => {
-        console.log(map.getBounds());
-      });
-    }
-    exports.initMap = initMap;
-
-  })((this.window = this.window || {}));
-</script>
