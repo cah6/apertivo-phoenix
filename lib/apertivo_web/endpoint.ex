@@ -1,16 +1,16 @@
-defmodule PhoenixGoogleMapTestWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :phoenix_google_map_test
+defmodule ApertivoWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :apertivo
 
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_phoenix_google_map_test_key",
+    key: "_apertivo_key",
     signing_salt: "GqeSx5TX"
   ]
 
-  socket "/socket", PhoenixGoogleMapTestWeb.UserSocket,
+  socket "/socket", ApertivoWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -22,7 +22,7 @@ defmodule PhoenixGoogleMapTestWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :phoenix_google_map_test,
+    from: :apertivo,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
@@ -32,7 +32,7 @@ defmodule PhoenixGoogleMapTestWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :phoenix_google_map_test
+    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :apertivo
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,
@@ -50,5 +50,5 @@ defmodule PhoenixGoogleMapTestWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug PhoenixGoogleMapTestWeb.Router
+  plug ApertivoWeb.Router
 end

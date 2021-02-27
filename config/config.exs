@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :phoenix_google_map_test,
-  ecto_repos: [PhoenixGoogleMapTest.Repo]
+config :apertivo,
+  ecto_repos: [Apertivo.Repo]
 
 # Configures the endpoint
-config :phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint,
+config :apertivo, ApertivoWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "MWXpSX2CHAJrpuKYCwOTt8DU0VLkHiK4p5MMRbaFKdLNOSkO2dhCC19EtLGgtK8X",
-  render_errors: [view: PhoenixGoogleMapTestWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: PhoenixGoogleMapTest.PubSub,
+  render_errors: [view: ApertivoWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Apertivo.PubSub,
   live_view: [signing_salt: "zOJj2JJc"]
 
 # Configures Elixir's Logger

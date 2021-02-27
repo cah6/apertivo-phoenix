@@ -1,14 +1,11 @@
-defmodule PhoenixGoogleMapTestWeb.PageLive do
+defmodule ApertivoWeb.PageLive do
   import PhoenixLiveReact
 
-  use PhoenixGoogleMapTestWeb, :live_view
+  use ApertivoWeb, :live_view
 
   @impl true
   def mount(_params, _session, socket) do
-    map_api_key =
-      Application.get_env(:phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint)[
-        :google_maps_api_key
-      ]
+    map_api_key = Application.get_env(:apertivo, ApertivoWeb.Endpoint)[:google_maps_api_key]
 
     {:ok, assign(socket, query: "", results: %{}, map_api_key: map_api_key)}
   end
@@ -52,7 +49,7 @@ defmodule PhoenixGoogleMapTestWeb.PageLive do
   end
 
   defp search(query) do
-    if not PhoenixGoogleMapTestWeb.Endpoint.config(:code_reloader) do
+    if not ApertivoWeb.Endpoint.config(:code_reloader) do
       raise "action disabled when not in development"
     end
 

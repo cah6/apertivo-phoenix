@@ -1,12 +1,12 @@
-defmodule PhoenixGoogleMapTestWeb do
+defmodule ApertivoWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use PhoenixGoogleMapTestWeb, :controller
-      use PhoenixGoogleMapTestWeb, :view
+      use ApertivoWeb, :controller
+      use ApertivoWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,19 +19,19 @@ defmodule PhoenixGoogleMapTestWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: PhoenixGoogleMapTestWeb
+      use Phoenix.Controller, namespace: ApertivoWeb
 
       import Plug.Conn
-      import PhoenixGoogleMapTestWeb.Gettext
-      alias PhoenixGoogleMapTestWeb.Router.Helpers, as: Routes
+      import ApertivoWeb.Gettext
+      alias ApertivoWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/phoenix_google_map_test_web/templates",
-        namespace: PhoenixGoogleMapTestWeb
+        root: "lib/apertivo_web/templates",
+        namespace: ApertivoWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
@@ -45,7 +45,7 @@ defmodule PhoenixGoogleMapTestWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {PhoenixGoogleMapTestWeb.LayoutView, "live.html"}
+        layout: {ApertivoWeb.LayoutView, "live.html"}
 
       unquote(view_helpers())
     end
@@ -72,7 +72,7 @@ defmodule PhoenixGoogleMapTestWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import PhoenixGoogleMapTestWeb.Gettext
+      import ApertivoWeb.Gettext
     end
   end
 
@@ -87,9 +87,9 @@ defmodule PhoenixGoogleMapTestWeb do
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
-      import PhoenixGoogleMapTestWeb.ErrorHelpers
-      import PhoenixGoogleMapTestWeb.Gettext
-      alias PhoenixGoogleMapTestWeb.Router.Helpers, as: Routes
+      import ApertivoWeb.ErrorHelpers
+      import ApertivoWeb.Gettext
+      alias ApertivoWeb.Router.Helpers, as: Routes
     end
   end
 

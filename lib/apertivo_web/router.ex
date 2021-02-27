@@ -1,11 +1,11 @@
-defmodule PhoenixGoogleMapTestWeb.Router do
-  use PhoenixGoogleMapTestWeb, :router
+defmodule ApertivoWeb.Router do
+  use ApertivoWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, {PhoenixGoogleMapTestWeb.LayoutView, :root}
+    plug :put_root_layout, {ApertivoWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -14,14 +14,14 @@ defmodule PhoenixGoogleMapTestWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", PhoenixGoogleMapTestWeb do
+  scope "/", ApertivoWeb do
     pipe_through :browser
 
     live "/", PageLive, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PhoenixGoogleMapTestWeb do
+  # scope "/api", ApertivoWeb do
   #   pipe_through :api
   # end
 
@@ -37,7 +37,7 @@ defmodule PhoenixGoogleMapTestWeb.Router do
 
     scope "/" do
       pipe_through :browser
-      live_dashboard "/dashboard", metrics: PhoenixGoogleMapTestWeb.Telemetry
+      live_dashboard "/dashboard", metrics: ApertivoWeb.Telemetry
     end
   end
 end

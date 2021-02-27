@@ -1,4 +1,4 @@
-defmodule PhoenixGoogleMapTestWeb.ChannelCase do
+defmodule ApertivoWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule PhoenixGoogleMapTestWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PhoenixGoogleMapTestWeb.ChannelCase, async: true`, although
+  by setting `use ApertivoWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,18 +21,18 @@ defmodule PhoenixGoogleMapTestWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import PhoenixGoogleMapTestWeb.ChannelCase
+      import ApertivoWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint PhoenixGoogleMapTestWeb.Endpoint
+      @endpoint ApertivoWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixGoogleMapTest.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Apertivo.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PhoenixGoogleMapTest.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Apertivo.Repo, {:shared, self()})
     end
 
     :ok

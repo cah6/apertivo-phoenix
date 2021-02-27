@@ -1,4 +1,4 @@
-defmodule PhoenixGoogleMapTestWeb.ErrorHelpers do
+defmodule ApertivoWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -39,9 +39,9 @@ defmodule PhoenixGoogleMapTestWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(PhoenixGoogleMapTestWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(ApertivoWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PhoenixGoogleMapTestWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(ApertivoWeb.Gettext, "errors", msg, opts)
     end
   end
 end

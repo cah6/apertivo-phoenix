@@ -1,5 +1,5 @@
-defmodule PhoenixGoogleMapTestWeb.LayoutViewTest do
-  use PhoenixGoogleMapTestWeb.ConnCase, async: true
+defmodule ApertivoWeb.LayoutViewTest do
+  use ApertivoWeb.ConnCase, async: true
 
   # When testing helpers, you may want to import Phoenix.HTML and
   # use functions such as safe_to_string() to convert the helper

@@ -1,4 +1,4 @@
-defmodule PhoenixGoogleMapTestWeb.Telemetry do
+defmodule ApertivoWeb.Telemetry do
   use Supervisor
   import Telemetry.Metrics
 
@@ -31,11 +31,11 @@ defmodule PhoenixGoogleMapTestWeb.Telemetry do
       ),
 
       # Database Metrics
-      summary("phoenix_google_map_test.repo.query.total_time", unit: {:native, :millisecond}),
-      summary("phoenix_google_map_test.repo.query.decode_time", unit: {:native, :millisecond}),
-      summary("phoenix_google_map_test.repo.query.query_time", unit: {:native, :millisecond}),
-      summary("phoenix_google_map_test.repo.query.queue_time", unit: {:native, :millisecond}),
-      summary("phoenix_google_map_test.repo.query.idle_time", unit: {:native, :millisecond}),
+      summary("apertivo.repo.query.total_time", unit: {:native, :millisecond}),
+      summary("apertivo.repo.query.decode_time", unit: {:native, :millisecond}),
+      summary("apertivo.repo.query.query_time", unit: {:native, :millisecond}),
+      summary("apertivo.repo.query.queue_time", unit: {:native, :millisecond}),
+      summary("apertivo.repo.query.idle_time", unit: {:native, :millisecond}),
 
       # VM Metrics
       summary("vm.memory.total", unit: {:byte, :kilobyte}),
@@ -49,7 +49,7 @@ defmodule PhoenixGoogleMapTestWeb.Telemetry do
     [
       # A module, function and arguments to be invoked periodically.
       # This function must call :telemetry.execute/3 and a metric must be added above.
-      # {PhoenixGoogleMapTestWeb, :count_users, []}
+      # {ApertivoWeb, :count_users, []}
     ]
   end
 end

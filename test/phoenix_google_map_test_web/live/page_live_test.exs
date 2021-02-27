@@ -1,5 +1,5 @@
-defmodule PhoenixGoogleMapTestWeb.PageLiveTest do
-  use PhoenixGoogleMapTestWeb.ConnCase
+defmodule ApertivoWeb.PageLiveTest do
+  use ApertivoWeb.ConnCase
 
   import Phoenix.LiveViewTest
 

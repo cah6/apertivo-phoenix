@@ -1,6 +1,6 @@
-defmodule PhoenixGoogleMapTest do
+defmodule Apertivo do
   @moduledoc """
-  PhoenixGoogleMapTest keeps the contexts that define your domain
+  Apertivo keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

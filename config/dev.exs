@@ -1,7 +1,7 @@
 use Mix.Config
 
 # Configure your database
-config :phoenix_google_map_test, PhoenixGoogleMapTest.Repo,
+config :apertivo, Apertivo.Repo,
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -12,7 +12,7 @@ config :phoenix_google_map_test, PhoenixGoogleMapTest.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint,
+config :apertivo, ApertivoWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -52,13 +52,13 @@ config :phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :phoenix_google_map_test, PhoenixGoogleMapTestWeb.Endpoint,
+config :apertivo, ApertivoWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/phoenix_google_map_test_web/(live|views)/.*(ex)$",
-      ~r"lib/phoenix_google_map_test_web/templates/.*(eex)$"
+      ~r"lib/apertivo_web/(live|views)/.*(ex)$",
+      ~r"lib/apertivo_web/templates/.*(eex)$"
     ]
   ]
 

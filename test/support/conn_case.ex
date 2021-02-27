@@ -1,4 +1,4 @@
-defmodule PhoenixGoogleMapTestWeb.ConnCase do
+defmodule ApertivoWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule PhoenixGoogleMapTestWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PhoenixGoogleMapTestWeb.ConnCase, async: true`, although
+  by setting `use ApertivoWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -22,20 +22,20 @@ defmodule PhoenixGoogleMapTestWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import PhoenixGoogleMapTestWeb.ConnCase
+      import ApertivoWeb.ConnCase
 
-      alias PhoenixGoogleMapTestWeb.Router.Helpers, as: Routes
+      alias ApertivoWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint PhoenixGoogleMapTestWeb.Endpoint
+      @endpoint ApertivoWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixGoogleMapTest.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Apertivo.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PhoenixGoogleMapTest.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Apertivo.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}

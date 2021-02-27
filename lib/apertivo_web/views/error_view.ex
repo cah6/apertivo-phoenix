@@ -1,5 +1,5 @@
-defmodule PhoenixGoogleMapTestWeb.ErrorView do
-  use PhoenixGoogleMapTestWeb, :view
+defmodule ApertivoWeb.ErrorView do
+  use ApertivoWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.
