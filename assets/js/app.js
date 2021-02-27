@@ -17,6 +17,7 @@ import "phoenix_html";
 import { Socket } from "phoenix";
 import NProgress from "nprogress";
 import { LiveSocket } from "phoenix_live_view";
+import layouts from "./layouts/exports";
 import LiveReact, { initLiveReact } from "phoenix_live_react";
 import GoogleMapWrapper from "./components/GoogleMapWrapper";
 
