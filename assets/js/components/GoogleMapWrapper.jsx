@@ -9,6 +9,7 @@ function GoogleMapWrapper(props) {
         lng: 150.644,
       },
       zoom: 5,
+      disableDefaultUI: true,
     });
 
     map.addListener("dragend", () => {
