@@ -32,4 +32,20 @@ defmodule ApertivoWeb.PageLive do
   defp rand_float(min, max) do
     :random.uniform() * (max - min) + min
   end
+
+  defp daysOrdered() do
+    ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  end
+
+  defp abbreviate(day) do
+    case day do
+      "Sunday" -> "S"
+      "Monday" -> "M"
+      "Tuesday" -> "T"
+      "Wednesday" -> "W"
+      "Thursday" -> "T"
+      "Friday" -> "F"
+      "Saturday" -> "S"
+    end
+  end
 end
