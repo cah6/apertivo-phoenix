@@ -7,10 +7,13 @@
   <div class="footer">
     <box-l padding="0.5rem" class="footer-box">
       <reel-l itemWidth="auto" noBar>
-        <%= for hh <- @results do %>
+        <%= for {hh, index} <- Enum.with_index(@results) do %>
         <box-l class="reel-item" id="reel-item-1">
           <stack-l space="1rem">
-            <h2><%= hh["restaurant"] %></h2>
+            <h2>
+              <%= "#{index + 1}. " %>
+              <a href="<%= hh["link"] %>"><%= hh["restaurant"] %></a>
+            </h2>
           </stack-l>
         </box-l>
         <% end %>
