@@ -21,7 +21,7 @@
                   <li>
                     <cluster-l space="0.5rem">
                       <ul>
-                        <%= for day <- daysOrdered do %>
+                        <%= for day <- daysOrdered() do %>
                         <%= if Enum.member?(schedule["days"], day) do %>
                         <li class="day-active"><%= abbreviate(day) %></li>
                         <% else %>
