@@ -7,7 +7,7 @@
   <div class="footer">
     <box-l padding="0.5rem" class="footer-box">
       <reel-l itemWidth="auto" noBar>
-        <%= for {hh, index} <- Enum.with_index(@results) do %>
+        <%= for {hh, index} <- Enum.with_index(@visible_results) do %>
         <box-l class="reel-item" id="reel-item-1">
           <stack-l space="1rem">
             <h2>

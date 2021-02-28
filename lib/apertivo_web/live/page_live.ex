@@ -11,30 +11,33 @@ defmodule ApertivoWeb.PageLive do
       File.read!("results.json")
       |> Jason.decode!()
 
-    {:ok, assign(socket, map_api_key: map_api_key, results: results)}
+    {:ok, assign(socket, map_api_key: map_api_key, all_results: results, visible_results: %{})}
   end
 
   @impl true
   def handle_event("bounds_changed", new_bounds, socket) do
-    %{"south" => s, "north" => n, "east" => e, "west" => w} = new_bounds
-    lat1 = rand_float(s, n)
-    lng1 = rand_float(w, e)
+    visible =
+      socket.assigns()[:all_results]
+      |> filter_results(new_bounds)
 
     {
       :noreply,
       push_event(
         socket,
-        "new_map_items",
-        %{
-          # a: %{lat: lat1, lng: lng1}
-          # b: %{lat: rand_float(south, north), lng: rand_float(west, east)}
-        }
+        "new_results",
+        %{"data" => visible}
       )
     }
   end
 
-  defp rand_float(min, max) do
-    :random.uniform() * (max - min) + min
+  defp filter_results(all, bounds) do
+    %{"south" => s, "north" => n, "east" => e, "west" => w} = bounds
+
+    Enum.filter(all, fn hh ->
+      lat = hh["latLng"]["latitude"]
+      lng = hh["latLng"]["longitude"]
+      lat > s && lat < n && lng > w && lng < e
+    end)
   end
 
   defp daysOrdered() do
