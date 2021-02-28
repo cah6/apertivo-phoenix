@@ -3,17 +3,19 @@
 
 <div>
   <%= live_react_component("Components.GoogleMapWrapper", %{}, id: "google-map-wrapper-1") %>
+
   <div class="footer">
     <box-l padding="0.5rem">
       <reel-l itemWidth="auto" noBar>
+        <%= for hh <- @results do %>
         <box-l class="reel-item" id="reel-item-1">
           <stack-l space="1rem">
-            <h2>Hello</h2>
-            <h2>From</h2>
-            <h2>Box</h2>
+            <h2><%= hh["restaurant"] %></h2>
           </stack-l>
         </box-l>
+        <% end %>
       </reel-l>
     </box-l>
+
   </div>
 </div>

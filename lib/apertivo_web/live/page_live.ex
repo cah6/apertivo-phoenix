@@ -7,7 +7,9 @@ defmodule ApertivoWeb.PageLive do
   def mount(_params, _session, socket) do
     map_api_key = Application.get_env(:apertivo, ApertivoWeb.Endpoint)[:google_maps_api_key]
 
-    {:ok, assign(socket, map_api_key: map_api_key)}
+    res = File.read!("results.json")
+    decoded = Jason.decode!(res)
+    {:ok, assign(socket, map_api_key: map_api_key, results: decoded)}
   end
 
   @impl true
