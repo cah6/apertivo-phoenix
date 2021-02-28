@@ -1,0 +1,1306 @@
+[
+  {
+    "link": "https://www.stellasgr.com/specials",
+    "id": "06b673f8-1720-463c-bf35-5c23fdd10af4",
+    "restaurant": "Stella's Lounge",
+    "placeId": "ChIJb6eO-8OtGYgRcv8XG-W8mWE",
+    "schedule": [
+      {
+        "scheduleDescription": "$1.75 PBR, $1.25 Blatz, $2 wells, $8 pitchers of sangria, 1/2 off chronic and chili cheese fries",
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      },
+      {
+        "scheduleDescription": "$1.75 PBR, $1.25 Blatz, $2 wells, $8 pitchers of sangria, 1/2 off chronic and chili cheese fries",
+        "days": ["Sunday", "Saturday"],
+        "time": "14:00-18:00"
+      }
+    ],
+    "latLng": { "longitude": -85.66935330000001, "latitude": 42.9616819 },
+    "city": "Grand Rapids"
+  },
+  {
+    "id": "09244c2e-0d87-4004-864b-a66971348d16",
+    "latLng": { "longitude": -83.06867, "latitude": 42.3599043 },
+    "city": "Detroit",
+    "schedule": [
+      {
+        "scheduleDescription": "$5 combo of burger, duck fat fries, and PBR",
+        "time": "15:00-18:00",
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      }
+    ],
+    "placeId": "ChIJnU2kyqLSJIgRbDqpVFux0PM",
+    "restaurant": "Common Pub Detroit",
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/common-pub-detroit"
+  },
+  {
+    "restaurant": "Batch Brewing Company",
+    "latLng": { "latitude": 42.3285274, "longitude": -83.06335200000001 },
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday"],
+        "time": "11:00-22:00",
+        "scheduleDescription": "3 beers and 3 apps for $3 each"
+      }
+    ],
+    "id": "0dd3bdf0-5d2c-423c-908c-a091982470d6",
+    "city": "Detroit",
+    "placeId": "ChIJj4k6iE8tO4gRgL1jtCw72ns",
+    "link": "https://www.batchbrewingcompany.com/"
+  },
+  {
+    "restaurant": "The Austin Wine Merchant",
+    "link": "https://www.theaustinwinemerchant.com/#",
+    "city": "Austin",
+    "placeId": "ChIJ_zJapg61RIYR2TN0r4coAsA",
+    "id": "1341ff19-fa10-440c-9ebc-9a60e7da11d1",
+    "latLng": { "latitude": 30.2696351, "longitude": -97.74792869999999 },
+    "schedule": [
+      {
+        "time": "12:00-15:00",
+        "days": ["Saturday"],
+        "scheduleDescription": "complimentary rotating wine tasting "
+      }
+    ]
+  },
+  {
+    "placeId": "ChIJUx3pXfu0RIYRHYxsf5OVPMw",
+    "city": "Austin",
+    "latLng": {
+      "longitude": -97.75119819999998,
+      "latitude": 30.24629309999999
+    },
+    "restaurant": "June's",
+    "schedule": [
+      {
+        "scheduleDescription": "25% off all food and sparkling wine; $2 off all drinks",
+        "time": "16:00-18:00",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      },
+      {
+        "time": "16:00-23:30",
+        "days": ["Monday"],
+        "scheduleDescription": "50% off sparkling wine"
+      }
+    ],
+    "id": "1bd087a2-cdda-4ea2-a134-f77e257706df",
+    "link": "https://junesallday.com/"
+  },
+  {
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "scheduleDescription": "$6 all drinks: cocktails, wine, boilermaker",
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJbWSDukUtO4gRBsvMHtOEHY0",
+    "city": "Detroit",
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/lady-of-the-house",
+    "restaurant": "Lady of the House",
+    "id": "1de5b941-6f92-4fd8-b88b-c8494de55ac1",
+    "latLng": { "latitude": 42.3299361, "longitude": -83.065125 }
+  },
+  {
+    "latLng": { "longitude": -82.94227790000002, "latitude": 42.3884181 },
+    "city": "Detroit",
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/lost-river",
+    "restaurant": "Lost River",
+    "id": "23bb0c19-bd5a-4fdf-ab9d-f5cfd420616f",
+    "placeId": "ChIJ_22Q8mbVJIgRz9uoIdDk9aE",
+    "schedule": [
+      {
+        "days": ["Sunday"],
+        "time": "16:00-00:00",
+        "scheduleDescription": "$2 beer, $4 daily punch, $6 navy grog"
+      },
+      {
+        "time": "16:00-18:00",
+        "scheduleDescription": "$2 beer, $4 daily punch, $6 navy grog",
+        "days": ["Wednesday", "Thursday"]
+      }
+    ]
+  },
+  {
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "days": ["Sunday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$3 beer, $4 sangria, $5 margaritas, rotating $5 food specials"
+      }
+    ],
+    "link": "https://www.mlive.com/food/2016/08/12_of_the_happiest_of_ann_arbo.html",
+    "id": "24ba1707-ee2a-433f-9126-1c547127f09e",
+    "city": "Ann Arbor",
+    "placeId": "ChIJxakU8D6uPIgRDkVcXiJ1mA4",
+    "restaurant": "Isalita",
+    "latLng": { "latitude": 42.2795874, "longitude": -83.7443945 }
+  },
+  {
+    "id": "25296f10-85c5-4648-8a86-08c7ab133a7b",
+    "placeId": "ChIJO4wxIL4zO4gRiiPwvWM7qtk",
+    "latLng": { "latitude": 42.330587, "longitude": -83.04832040000002 },
+    "schedule": [
+      {
+        "days": ["Sunday"],
+        "scheduleDescription": "HH prices for service industry",
+        "time": "11:00-22:00"
+      }
+    ],
+    "city": "Detroit",
+    "link": "https://drive.google.com/file/d/1rPYjIopLHKkiz5D29_vmYjAdXITnkeuA/view",
+    "restaurant": "Maru Sushi & Grill"
+  },
+  {
+    "city": "Austin",
+    "schedule": [
+      {
+        "days": ["Sunday"],
+        "scheduleDescription": "$7 classic cocktails, $1 off of beers and smaller snacks, $2 off wine by the glass and bigger bar dishes",
+        "time": "15:00-19:00"
+      },
+      {
+        "time": "16:00-19:30",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "scheduleDescription": "$7 classic cocktails, $1 off of beers and smaller snacks, $2 off wine by the glass and bigger bar dishes"
+      },
+      {
+        "scheduleDescription": "$7 classic cocktails, $1 off of beers and smaller snacks, $2 off wine by the glass and bigger bar dishes",
+        "time": "19:30-23:30",
+        "days": ["Monday", "Tuesday"]
+      }
+    ],
+    "latLng": { "longitude": -97.74627729999997, "latitude": 30.2677886 },
+    "placeId": "ChIJIeohJQm1RIYRG-NyRBlsnuw",
+    "link": "https://www.therooseveltroomatx.com/",
+    "id": "2e28a777-a6ae-4623-a50d-cbb739831cf0",
+    "restaurant": "The Roosevelt Room"
+  },
+  {
+    "city": "SF",
+    "latLng": { "longitude": -122.4032964, "latitude": 37.789779 },
+    "placeId": "ChIJf4tju4mAhYARy9Y0wiTkvQU",
+    "restaurant": "Gaspar Brasserie",
+    "id": "34741431-8177-4cfe-9996-449abf3a7954",
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$8 select cocktails, wine, and food; $1.50 oysters"
+      }
+    ],
+    "link": "http://gasparbrasserie.com/menu/"
+  },
+  {
+    "schedule": [
+      {
+        "scheduleDescription": "$8 cocktails, $5 lager and rosé, food specials",
+        "time": "15:30-18:00",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ]
+      }
+    ],
+    "link": "http://starbellysf.com/happy-hour/",
+    "restaurant": "Starbelly",
+    "placeId": "ChIJs6YBYhx-j4AR4LUJq9SFQt0",
+    "city": "SF",
+    "latLng": { "latitude": 37.7640778, "longitude": -122.4325722 },
+    "id": "3938e67a-6440-43fa-9b90-37dd144a9150"
+  },
+  {
+    "placeId": "ChIJ0csHikYtO4gRS8Akw-piaR4",
+    "restaurant": "Mudgie's Deli and Wine Shop",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "15:00-18:00",
+        "scheduleDescription": "$5 off wine bottles, $4 glasses of wine, $5 cocktail of the week, $3 jameson/fernet shots, $2 beer of the day, $7 port and cheese"
+      }
+    ],
+    "id": "3a88efdb-05c3-4850-9425-c801fa6eb8a5",
+    "latLng": { "longitude": -83.062092, "latitude": 42.3291051 },
+    "link": "http://mudgiesdeli.com/mudgiesdinnermenu.pdf",
+    "city": "Detroit"
+  },
+  {
+    "id": "3cde78ba-e4fb-485c-99ac-67ad1f35bbfd",
+    "latLng": { "longitude": -97.75455899999997, "latitude": 30.250129 },
+    "schedule": [
+      {
+        "time": "15:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "Half off all specialty cocktails, wines, sake, and beer, and $3 snacks"
+      }
+    ],
+    "placeId": "ChIJX5qi8OK0RIYR4SjE2J7x0_Y",
+    "city": "Austin",
+    "restaurant": "Sway",
+    "link": "https://swaythai.com/"
+  },
+  {
+    "placeId": "ChIJC_R0Az2uPIgRyVn5XMucwzA",
+    "restaurant": "The Earle Restaurant",
+    "city": "Ann Arbor",
+    "schedule": [
+      {
+        "time": "17:00-20:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "20% off wine bar food and glasses, $3.75 mussels until 6:30pm"
+      },
+      {
+        "time": "17:00-21:00",
+        "days": ["Monday", "Tuesday", "Wednesday"],
+        "scheduleDescription": "$4 drafts, $13 whitefish entree"
+      },
+      {
+        "time": "17:00-21:00",
+        "days": ["Thursday"],
+        "scheduleDescription": "$6 martinis"
+      }
+    ],
+    "latLng": {
+      "longitude": -83.74960829999999,
+      "latitude": 42.28037500000001
+    },
+    "id": "3e65eed5-6c6f-4d19-95c6-1b27aa196fa8",
+    "link": "https://theearle.com/happy-hour-specials/"
+  },
+  {
+    "placeId": "ChIJQ-Z3a8StGYgRC-Ub0v2tkDU",
+    "id": "3f36f5d8-a14d-4c92-a13c-a15a88c6c053",
+    "restaurant": "Grand Rapids Brewing Co.",
+    "latLng": { "longitude": -85.67046399999998, "latitude": 42.9631122 },
+    "link": "https://www.grbrewingcompany.com/",
+    "city": "Grand Rapids",
+    "schedule": [
+      {
+        "time": "15:00-18:00",
+        "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "scheduleDescription": "1/2 off beers (up to $6), wine, wells, apps"
+      }
+    ]
+  },
+  {
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "scheduleDescription": "$1 off beer, $3 Cuba libre, $5 frita, $1.50 fries",
+        "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
+      }
+    ],
+    "restaurant": "Frita Batidos Ann Arbor",
+    "placeId": "ChIJx8yeAT2uPIgRjemtDnqZt4U",
+    "latLng": { "longitude": -83.7494414, "latitude": 42.2803524 },
+    "id": "4227b8dd-0b3e-41a2-99f3-3097698766b9",
+    "city": "Ann Arbor",
+    "link": "http://www.fritabatidos.com/happy-hour/"
+  },
+  {
+    "latLng": { "longitude": -97.72886699999998, "latitude": 30.258394 },
+    "restaurant": "Bufalina Pizza",
+    "schedule": [
+      {
+        "time": "16:00-17:30",
+        "scheduleDescription": "50% off all pizzas, $2 off drafts, $5 house wine, 50% off all bottles of wine <$100 and Jester King Beer",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJ4ys7OrK1RIYRUYamRxM0adg",
+    "city": "Austin",
+    "link": "https://www.bufalinapizza.com/#menus/bufalina-happy-hour",
+    "id": "432c3317-3799-4b3a-a150-1267cf454088"
+  },
+  {
+    "latLng": { "latitude": 30.2615215, "longitude": -97.74175509999998 },
+    "link": "https://cicloatx.com/menus/#happy-hour",
+    "restaurant": "Ciclo",
+    "city": "Austin",
+    "placeId": "ChIJR1_YNZe1RIYR3y039U_VIMQ",
+    "schedule": [
+      {
+        "scheduleDescription": "$5 draft beer  $5 rotating specialty cocktail  $5 select wines by the glass  $20 select wines by the bottle  $39 Moët et Chandon by the bottle  $9 Patrón y Tamarindo",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "time": "17:00-19:00"
+      }
+    ],
+    "id": "48ae37c3-de7e-407d-b8ac-0083309ebdaa"
+  },
+  {
+    "city": "SF",
+    "placeId": "ChIJR5gIs-mAhYARRP3el11Nljo",
+    "schedule": [
+      {
+        "scheduleDescription": "$5 quesadillas; $1.95 chips & salsa; $6.75 margaritas; $4 beers; $5 sangria",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "16:00-21:00"
+      }
+    ],
+    "latLng": { "longitude": -122.4008156, "latitude": 37.7891127 },
+    "id": "48aefe65-1a2a-4b2e-8c95-42ac57c0de93",
+    "restaurant": "Uno Dos Tacos",
+    "link": "http://unodostacos.com/"
+  },
+  {
+    "placeId": "ChIJMUfEOWEtO4gRddDKWmgPMpI",
+    "latLng": { "longitude": -83.07438709999997, "latitude": 42.318861 },
+    "city": "Detroit",
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/johnny-noodle-king",
+    "id": "4edbc653-fe57-4531-91f2-aa6485d1bf21",
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$1 Sapporo, $2 sake"
+      }
+    ],
+    "restaurant": "Johnny Noodle King"
+  },
+  {
+    "restaurant": "Suerte",
+    "latLng": { "latitude": 30.2622778, "longitude": -97.72327580000001 },
+    "id": "4f09b7bb-e459-45da-8a62-65faadd6f615",
+    "city": "Austin",
+    "link": "",
+    "placeId": "ChIJAQBE-7a1RIYRcZNYsxWYIUg",
+    "schedule": [
+      {
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "time": "17:00-18:00",
+        "scheduleDescription": "$6 select cocktails and house wines, 25% off wine by the bottle, 25% off 3 oz mezcal pours, $3 pints of Suerte lager"
+      },
+      {
+        "days": ["Monday"],
+        "time": "17:00-18:00",
+        "scheduleDescription": "Mezcal Monday offerings include half off copitas & familia pours of mezcal from the week's featured label"
+      }
+    ]
+  },
+  {
+    "city": "Detroit",
+    "link": "https://www.firebirdtavern.com/menus/detroit-happy-hour/",
+    "placeId": "ChIJf4jamy4tO4gRlgZDMN-0m4A",
+    "restaurant": "Firebird Tavern",
+    "id": "50b39ab5-89f2-442d-b1fc-bea650008ace",
+    "latLng": {
+      "longitude": -83.04327699999999,
+      "latitude": 42.33471100000001
+    },
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "1/2 off beer (min $2.50) and wine (min $4), $5 plates"
+      }
+    ]
+  },
+  {
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/the-skip",
+    "restaurant": "The Skip",
+    "latLng": { "longitude": -83.0465167, "latitude": 42.3345667 },
+    "id": "5658438d-d37b-4901-b23b-c301f68c9d0f",
+    "schedule": [
+      {
+        "time": "16:00-18:30",
+        "scheduleDescription": "$6 select cocktails",
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJL1pWHC4tO4gR1aabYUyo6wE",
+    "city": "Detroit"
+  },
+  {
+    "link": "http://www.cornerstonedetroit.com/var/cornerstone/storage/original/application/3b0551bf861266fa7ece3f350ca081d4.pdf",
+    "latLng": { "longitude": -83.04912680000001, "latitude": 42.3349802 },
+    "schedule": [
+      {
+        "scheduleDescription": "$3 sliders and sides, $4 bourbon of the day, other drink specials",
+        "time": "15:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJWQWNjzEtO4gR6_zfWGFM7Uo",
+    "city": "Detroit",
+    "id": "57f6a419-7f1e-4a85-8720-58f971ba738b",
+    "restaurant": "Cornerstone Barrel House"
+  },
+  {
+    "restaurant": "Amelie San Francisco",
+    "schedule": [
+      {
+        "time": "17:00-19:00",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "scheduleDescription": "$7 flatbread, $12 wine flight (3), $24 meat and cheese plate"
+      }
+    ],
+    "latLng": { "latitude": 37.7930914, "longitude": -122.4210149 },
+    "placeId": "ChIJ88G-quuAhYAR7bj0Yhr8gwI",
+    "id": "5be7c4a9-763c-4061-86eb-22c9dd6e599d",
+    "link": "https://static1.squarespace.com/static/55122c88e4b093e37aa8d1d2/t/5c37cf9540ec9ac31fc0e593/1547161498398/Amelie+Menu+SF_winter18-19.pdf",
+    "city": "SF"
+  },
+  {
+    "id": "5c4e6fb9-e6bf-4018-80f0-f37d6716e6dc",
+    "schedule": [
+      {
+        "scheduleDescription": "1/2 off bar menu, $5 select wine and wells, $4 select beer",
+        "time": "16:30-18:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJ44I96jAtO4gRZnl9nd1pZ6U",
+    "city": "Detroit",
+    "latLng": { "longitude": -83.0505719, "latitude": 42.3322007 },
+    "link": "http://www.roastdetroit.com/bar-menu/",
+    "restaurant": "Roast"
+  },
+  {
+    "city": "Austin",
+    "latLng": { "longitude": -97.73567800000001, "latitude": 30.26588 },
+    "restaurant": "Easy Tiger",
+    "placeId": "ChIJn0u35aW1RIYRxCTiNNvF3cA",
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$5 sausage links, $3 small pretzels with beer cheese, $3 off Antonelli's cheese plate, $4 Old Fashioneds, $4 Vodka Collins, $3 Easy Shandys, $3 select local draft beers"
+      }
+    ],
+    "id": "5ce6d19c-df77-4fea-8939-ff95dd6f29ea",
+    "link": "https://www.easytigerusa.com/sixth-street-austin"
+  },
+  {
+    "restaurant": "Aviary",
+    "id": "5de8e4c6-9c15-411f-992b-651ca8de4eac",
+    "latLng": { "latitude": 30.2482125, "longitude": -97.77140789999999 },
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "scheduleDescription": "$2 off all glasses, beer, 5 bar bites, $10 off bottles",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      },
+      {
+        "days": ["Saturday"],
+        "time": "16:00-18:00",
+        "scheduleDescription": "50% off all bottles"
+      }
+    ],
+    "city": "Austin",
+    "link": "",
+    "placeId": "ChIJP9V5ANm0RIYRq3_Mz9xU_7A"
+  },
+  {
+    "city": "Detroit",
+    "restaurant": "Craft Work",
+    "link": "http://www.craftworkdetroit.com/happy-hour.html",
+    "id": "5ea8fa5d-957e-4990-a0c3-b4ed1b3139b8",
+    "placeId": "ChIJpYPVRV7TJIgR9qcEIi3NL5s",
+    "schedule": [
+      {
+        "scheduleDescription": "$7 cocktails, $6 wine, $4 draft, food specials",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "16:00-18:00"
+      }
+    ],
+    "latLng": { "latitude": 42.35540839999999, "longitude": -82.99679989999998 }
+  },
+  {
+    "placeId": "ChIJc6rXgFotO4gR5W1F9AeEbFA",
+    "id": "5fb25423-0a59-44f6-a318-e90593ff09f1",
+    "city": "Detroit",
+    "link": "https://detroit.eater.com/maps/best-new-detroit-happy-hour-map/bobcat-bonnies",
+    "restaurant": "Bobcat Bonnie's",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "16:00-19:00",
+        "scheduleDescription": "$5 cocktails and wine, $1 off drafts"
+      }
+    ],
+    "latLng": { "longitude": -83.07087639999997, "latitude": 42.3316746 }
+  },
+  {
+    "city": "Detroit",
+    "restaurant": "Parc",
+    "id": "60ecc217-dec2-4082-af2a-6153b4415a74",
+    "link": "http://parcdetroit.com/happy-hour/",
+    "latLng": { "longitude": -83.04685099999999, "latitude": 42.3315627 },
+    "placeId": "ChIJ14Db4S8tO4gRhNP1-W1y4xs",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "15:00-18:00",
+        "scheduleDescription": "$7 bites and cocktails, $6 wine, $5 beer"
+      }
+    ]
+  },
+  {
+    "latLng": { "latitude": 42.3316844, "longitude": -83.0808338 },
+    "city": "Detroit",
+    "link": "http://takoidetroit.com/",
+    "placeId": "ChIJ2QeajacyO4gRR3XtR0mA8rg",
+    "restaurant": "Takoi",
+    "id": "684e3248-f01d-4a33-a054-e65688f17330",
+    "schedule": [
+      {
+        "time": "17:00-19:30",
+        "days": ["Wednesday"],
+        "scheduleDescription": "$7 cocktails, $6 wine, $4 drafts, $3 high life; $8 chicken sandwich, $6 chickpea tofu"
+      }
+    ]
+  },
+  {
+    "restaurant": "Red Ash",
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "scheduleDescription": "$2 Off all Cocktails, Beer & Wines by the Glass Enjoy all Appetizers for $9, Salads for $7 & Small Pastas for $8",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      }
+    ],
+    "placeId": "ChIJWfpBiwi1RIYRvg4iIbIE2go",
+    "id": "6df5a9fe-4e5d-4a94-8dc0-8f303f016bf4",
+    "link": "",
+    "city": "Austin",
+    "latLng": { "longitude": -97.7447985, "latitude": 30.2656803 }
+  },
+  {
+    "latLng": { "latitude": 30.2672231, "longitude": -97.7389569 },
+    "city": "Austin",
+    "restaurant": "The Jackalope",
+    "schedule": [
+      {
+        "time": "14:00-19:00",
+        "scheduleDescription": "$2 tall boys, $2 wells, $4 margaritas",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      },
+      {
+        "scheduleDescription": "$2 tall boys, $2 wells, $4 margaritas",
+        "days": ["Monday"],
+        "time": "19:00-23:30"
+      }
+    ],
+    "id": "6f3a343f-f1b8-4cb0-95b3-67a12df32206",
+    "link": "https://www.jackalopebar.com/downtown",
+    "placeId": "ChIJf9rTVKa1RIYRGWjMsGuTEZw"
+  },
+  {
+    "placeId": "ChIJO3ZbOa2_JIgR9wx4WnMwBL0",
+    "restaurant": "Fillmore 13 Brewery",
+    "id": "72f6e4c1-5c1e-4645-950b-dae7b45cca6e",
+    "city": "Pontiac",
+    "link": "",
+    "latLng": { "longitude": -83.29246260000002, "latitude": 42.6369002 },
+    "schedule": [
+      {
+        "days": ["Monday"],
+        "time": "18:00-22:00",
+        "scheduleDescription": "1/2 off pizza (with purchase of drink) "
+      },
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$1 off beer/cider, $2 off wine, $5-8 food specials "
+      }
+    ]
+  },
+  {
+    "id": "738467cf-a874-4f47-8596-783bc1f918af",
+    "link": "",
+    "placeId": "ChIJrTpP9FktO4gRP6PV4u5uD38",
+    "restaurant": "ima",
+    "city": "Detroit",
+    "latLng": { "latitude": 42.3311539, "longitude": -83.0739213 },
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$2 house sake carafe (6 oz), Tecate, snack items "
+      }
+    ]
+  },
+  {
+    "latLng": { "longitude": -122.4695711, "latitude": 37.7825618 },
+    "schedule": [
+      {
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "time": "17:00-18:30",
+        "scheduleDescription": "$2 sake, $3 beer, $12 pitcher, 1/2 off soju cocktails, $4-7 food specials"
+      }
+    ],
+    "id": "7627c2cf-4aee-4a78-9d48-0bda6e68f8c3",
+    "city": "SF",
+    "placeId": "ChIJI8aUKxaHhYAR6tZR7eujOx0",
+    "link": "http://www.shabuclubsf.com/menu.html",
+    "restaurant": "Shabu Club"
+  },
+  {
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "time": "22:00-23:30",
+        "scheduleDescription": "$5 off burgers, 1/2 off fries and shareables, $1.50 off drafts, $3 wine and wells"
+      },
+      {
+        "scheduleDescription": "$5 off burgers, 1/2 off fries and shareables, $1.50 off drafts, $3 wine and wells",
+        "time": "15:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday"]
+      }
+    ],
+    "latLng": { "latitude": 42.3524391, "longitude": -83.0616 },
+    "placeId": "ChIJMSuIlbnSJIgRbUFj__-VGdA",
+    "link": "https://hopcat.com/detroit",
+    "city": "Detroit",
+    "restaurant": "HopCat",
+    "id": "768640e8-79c0-414e-af0c-f56682c2ed22"
+  },
+  {
+    "restaurant": "Townhouse Detroit",
+    "city": "Detroit",
+    "latLng": { "longitude": -83.04531429999997, "latitude": 42.3301258 },
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "15:00-18:00",
+        "scheduleDescription": "1/2 off everything"
+      }
+    ],
+    "id": "811449e8-62a5-4984-9054-cfba165402bd",
+    "link": "http://eatattownhouse.com/menus/",
+    "placeId": "ChIJ5aekZCUtO4gRah1f8c0F4FE"
+  },
+  {
+    "placeId": "ChIJryINKG2tGYgRG89hhnCfcEE",
+    "latLng": {
+      "latitude": 42.95512410000001,
+      "longitude": -85.63068859999998
+    },
+    "link": "https://www.experiencegr.com/event/harmony-hall-happy-hour/45344/",
+    "restaurant": "Harmony Brewing Company",
+    "schedule": [
+      {
+        "scheduleDescription": "$3 sausage with purchase of pint",
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "id": "82121e0a-d0cc-434e-8810-08416f5ad55b",
+    "city": "Grand Rapids"
+  },
+  {
+    "latLng": { "longitude": -122.4154806, "latitude": 37.7687083 },
+    "restaurant": "Nihon Whisky Lounge",
+    "id": "8302ed72-3b42-4d9e-9a05-e8abc38b2695",
+    "placeId": "ChIJX1E5fyZ-j4ARjujgYYPmhWA",
+    "city": "SF",
+    "link": "https://sf.eater.com/maps/cheap-cocktails-san-francisco-happy-hours/nihon-whisky-lounge",
+    "schedule": [
+      {
+        "scheduleDescription": "1/2 off cocktails and select food",
+        "time": "17:30-19:00",
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      }
+    ]
+  },
+  {
+    "restaurant": "Jeffrey's",
+    "placeId": "ChIJn64e4Wu1RIYRGNdMhqJ5jNk",
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "scheduleDescription": "50% off all bar menu food; $2 off cocktails and wine by the glass",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      },
+      {
+        "time": "18:30-23:00",
+        "scheduleDescription": "50% off all bar menu food; $2 off cocktails and wine by the glass",
+        "days": ["Monday"]
+      }
+    ],
+    "latLng": {
+      "longitude": -97.75911459999999,
+      "latitude": 30.28042300000001
+    },
+    "id": "88b9dde5-0452-4f1c-a6ce-8aed0471f74e",
+    "link": "https://jeffreysofaustin.com/",
+    "city": "Austin"
+  },
+  {
+    "id": "8b0760bf-aac5-4a3d-8a11-6f2a307cafed",
+    "schedule": [
+      {
+        "scheduleDescription": "1/2 off apps, $2 off all beers",
+        "time": "15:00-19:00",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      }
+    ],
+    "city": "Detroit",
+    "placeId": "ChIJv3HnLi8tO4gRPBO0NF_tpgY",
+    "latLng": { "longitude": -83.0421584, "latitude": 42.33228389999999 },
+    "link": "https://www.facebook.com/events/141777139702295/?active_tab=discussion",
+    "restaurant": "Jacoby's"
+  },
+  {
+    "schedule": [
+      {
+        "time": "16:30-18:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$6 off ghostbar food, 1/2 off cocktails, beer, wine"
+      }
+    ],
+    "latLng": { "longitude": -83.062176, "latitude": 42.35281080000001 },
+    "id": "8d500563-fab5-44cb-915e-2e63eff3ee89",
+    "restaurant": "The Whitney",
+    "link": "https://www.thewhitney.com/events/Happy-Hour",
+    "city": "Detroit",
+    "placeId": "ChIJ3Q5Al7nSJIgRQtzJ32hAwX4"
+  },
+  {
+    "id": "90ecb611-cb71-430f-a1a8-f81e1072b861",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$5 food items, $1 off drafts, $4 spirits, $6 wine and cocktails",
+        "time": "16:00-18:00"
+      }
+    ],
+    "city": "Grosse Pointe Park",
+    "placeId": "ChIJpzSnja_VJIgRyffHHw-Ja8k",
+    "latLng": { "longitude": -82.94002890000002, "latitude": 42.381202 },
+    "link": "https://www.atwaterbeer.com/wp-content/uploads/2018/01/AIP-Happy-Hour-Menu-1-2-18.jpg",
+    "restaurant": "Atwater in the Park"
+  },
+  {
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$5 wine, cocktails, beer, $10 pizzas",
+        "time": "14:30-18:30"
+      }
+    ],
+    "latLng": { "latitude": 30.2682643, "longitude": -97.7440312 },
+    "placeId": "ChIJDXIPpAm1RIYRqL91mK40G6A",
+    "link": "http://italicaustin.com/wp-content/uploads/2019/04/ITMENU-hhnew-4.26.19.pdf",
+    "restaurant": "Italic",
+    "city": "Austin",
+    "id": "9307e02b-c698-4f59-937b-ff559365d496"
+  },
+  {
+    "latLng": { "longitude": -83.747449, "latitude": 42.283784 },
+    "id": "93853c0c-d165-41a6-8c66-d6646d1771d3",
+    "placeId": "ChIJnZvJbBauPIgRhztNmzsq5wc",
+    "city": "Ann Arbor",
+    "schedule": [
+      {
+        "time": "16:00-19:00",
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "1/2 price apps, $5 cocktail of the day, $4 absolut cosmo"
+      }
+    ],
+    "link": "https://www.autbar.com/",
+    "restaurant": "\\aut\\ BAR"
+  },
+  {
+    "city": "SF",
+    "restaurant": "Locanda",
+    "schedule": [
+      {
+        "time": "17:30-19:00",
+        "scheduleDescription": "(Might need update) $8 cocktails, $6 wine, free snacks",
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      }
+    ],
+    "link": "http://www.jsfashionista.com/locanda-san-francisco/",
+    "placeId": "ChIJ09Ub-SJ-j4AR5ZN9gKgYGU8",
+    "latLng": { "latitude": 37.764071, "longitude": -122.4216435 },
+    "id": "950cab7b-ca55-45ec-95ba-56fea8a39715"
+  },
+  {
+    "city": "Grand Rapids",
+    "placeId": "ChIJC6PAxdatGYgRRQ8xhsG8LlM",
+    "restaurant": "New Holland Brewing - The Knickerbocker",
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$1 off beer, cocktails; happy hour menu"
+      }
+    ],
+    "latLng": { "longitude": -85.67980929999999, "latitude": 42.9707078 },
+    "link": "http://newhollandbrew.com/knickerbocker/",
+    "id": "9a6e5cb4-98e7-4f2f-921d-39780f761610"
+  },
+  {
+    "id": "a50dbda3-493b-4795-9ed3-2500e37935e4",
+    "link": "https://www.ilbruttoaustin.com/",
+    "restaurant": "Il Brutto",
+    "latLng": {
+      "longitude": -97.72634160000001,
+      "latitude": 30.26281999999999
+    },
+    "city": "Austin",
+    "placeId": "ChIJeZBH07a1RIYRO8laRdPddzA",
+    "schedule": [
+      {
+        "time": "17:00-19:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "Half off the entire drink menu"
+      }
+    ]
+  },
+  {
+    "latLng": { "longitude": -83.0598907, "latitude": 42.3498383 },
+    "restaurant": "The Block",
+    "link": "http://www.theblockdet.com/happy-hour",
+    "placeId": "ChIJLaIJl7fSJIgRlqXp4K6aFWA",
+    "id": "a9c10865-20f6-4d20-9d40-60a60b030571",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "16:00-19:00",
+        "scheduleDescription": "$1 select drafts, $3 wine, $3 mac and cheese, more food specials"
+      }
+    ],
+    "city": "Detroit"
+  },
+  {
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "scheduleDescription": "$3 labatt and stella drafts, $4 wine, $1 wings; $1 labatt on home game days"
+      }
+    ],
+    "id": "ad2f76f2-5497-4ec2-988b-bd6d66eee35f",
+    "link": "https://www.detroitshippingcompany.com/promotions",
+    "city": "Detroit",
+    "restaurant": "Detroit Shipping Company",
+    "placeId": "ChIJ-QgBUkvTJIgRGXg4cBYH6pA",
+    "latLng": { "longitude": -83.06150049999997, "latitude": 42.3441093 }
+  },
+  {
+    "id": "b48570fb-2e9b-4ec9-bd85-bb353395d029",
+    "city": "Detroit",
+    "placeId": "ChIJ1YwA47TSJIgRGl_qyuDrl-g",
+    "restaurant": "Founders Brewing Co. Detroit",
+    "link": "https://foundersbrewing.com/brewery/detroit/",
+    "schedule": [
+      {
+        "scheduleDescription": "Industry day: $1.50 off class 1 and class 2 beers",
+        "time": "11:00-23:30",
+        "days": ["Monday"]
+      }
+    ],
+    "latLng": { "latitude": 42.3428461, "longitude": -83.06047999999998 }
+  },
+  {
+    "restaurant": "Anchor & Hope",
+    "id": "bbf2beec-b22b-4414-9156-a6f3d46c8e2f",
+    "schedule": [
+      {
+        "time": "16:30-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "dollar oysters, wine and beer discounts"
+      }
+    ],
+    "city": "SF",
+    "link": "http://anchorandhopesf.com/menus/happy-hour",
+    "latLng": { "latitude": 37.7878312, "longitude": -122.3988909 },
+    "placeId": "ChIJaWduK32AhYARvGPmEG2yrWA"
+  },
+  {
+    "link": "https://clarksaustin.com/wp-content/uploads/2019/05/Clarks_Bar.pdf",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "50% off burgers, $5 martinis, shooters, beer, 50 cents off oysters",
+        "time": "15:00-18:00"
+      },
+      {
+        "time": "15:00-18:00",
+        "scheduleDescription": "50% of bottles of wine, 50 cents off oysters, $5 oyster shooters",
+        "days": ["Sunday", "Saturday"]
+      }
+    ],
+    "city": "Austin",
+    "latLng": { "latitude": 30.2729962, "longitude": -97.75718119999999 },
+    "placeId": "ChIJbeqvYxO1RIYR5zZEcyfr02s",
+    "id": "c53f8a37-497c-4c1e-ab6f-be33831c3e1d",
+    "restaurant": "Clark's Oyster Bar"
+  },
+  {
+    "city": "Detroit",
+    "placeId": "ChIJdcq0Fi4tO4gRHAg2pJeA0r0",
+    "id": "d258b93f-f3fb-4b7f-8925-904979b42ca0",
+    "latLng": { "latitude": 42.3344198, "longitude": -83.04602210000002 },
+    "link": "http://www.standbydetroit.com/menu-2",
+    "schedule": [
+      {
+        "time": "17:00-02:00",
+        "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "scheduleDescription": "(all day) at-cost 1oz pour of high-end whiskey"
+      }
+    ],
+    "restaurant": "Standby"
+  },
+  {
+    "schedule": [
+      {
+        "scheduleDescription": "$4 beer, $5 bar bites, $7 margaritas",
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "id": "d5a05ace-3839-499d-ab2b-b4f3a37d96de",
+    "link": "http://eltechosf.com/happy-hour/",
+    "city": "SF",
+    "placeId": "ChIJaYr9tz5-j4ARViEEUUUDY0k",
+    "latLng": { "latitude": 37.756576, "longitude": -122.4190831 },
+    "restaurant": "El Techo"
+  },
+  {
+    "latLng": { "latitude": 30.270527, "longitude": -97.750899 },
+    "link": "http://www.grovewinebar.com/wp-content/uploads/2019/05/WEB-Downtown-Cocktail-Menu-05-08-2019.pdf",
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$12 cocktails, $2 off frozen, $2 off tap"
+      },
+      {
+        "days": ["Sunday"],
+        "time": "16:00-23:00",
+        "scheduleDescription": "50% off wine by the glass"
+      },
+      {
+        "scheduleDescription": "50% off wine by the glass, 50% off appetizers",
+        "time": "16:00-23:00",
+        "days": ["Monday"]
+      }
+    ],
+    "id": "dd141202-0f31-4215-a67c-ef9e5f3ff781",
+    "placeId": "ChIJ8Y5xww21RIYRvVeGeA4mWFQ",
+    "city": "Austin",
+    "restaurant": "The Grove Wine Bar & Kitchen - Downtown"
+  },
+  {
+    "city": "San Jose",
+    "latLng": { "latitude": 37.3362201, "longitude": -121.8939061 },
+    "restaurant": "District",
+    "id": "eb1ad5e6-4773-4dde-93aa-02347a199897",
+    "link": "",
+    "schedule": [
+      {
+        "scheduleDescription": "$7 Happy Hour: well drinks, wines & beers; 2 for 1 oysters (orders of 6), SPICED MARCONA ALMONDS HOUSE MARINATED OLIVES HOUSE CURED MARKET VEGETABLES DEVILED EGGS FRENCH FRIES CRISPY SPICED CHICKEN WINGS SHRIMP AND ALBACORE CEVICHE TEMPURA AVOCADO FONTINA & SPINACH RISOTTO ARANCINI SMOKED TROUT PATE CROSTINI DUCK CONFIT PASTIS",
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      },
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "scheduleDescription": "$7 Happy Hour: well drinks, wines & beers; 2 for 1 oysters (orders of 6), SPICED MARCONA ALMONDS HOUSE MARINATED OLIVES HOUSE CURED MARKET VEGETABLES DEVILED EGGS FRENCH FRIES CRISPY SPICED CHICKEN WINGS SHRIMP AND ALBACORE CEVICHE TEMPURA AVOCADO FONTINA & SPINACH RISOTTO ARANCINI SMOKED TROUT PATE CROSTINI DUCK CONFIT PASTIS",
+        "time": "21:00-22:00"
+      },
+      {
+        "time": "22:00-23:00",
+        "days": ["Friday", "Saturday"],
+        "scheduleDescription": "$7 Happy Hour: well drinks, wines & beers; 2 for 1 oysters (orders of 6), SPICED MARCONA ALMONDS HOUSE MARINATED OLIVES HOUSE CURED MARKET VEGETABLES DEVILED EGGS FRENCH FRIES CRISPY SPICED CHICKEN WINGS SHRIMP AND ALBACORE CEVICHE TEMPURA AVOCADO FONTINA & SPINACH RISOTTO ARANCINI SMOKED TROUT PATE CROSTINI DUCK CONFIT PASTIS"
+      }
+    ],
+    "placeId": "ChIJfS-oT6LMj4ARqmWyZ3jrg9k"
+  },
+  {
+    "schedule": [
+      {
+        "scheduleDescription": "$2 beer, $5 wine and boozy slushies",
+        "time": "16:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "placeId": "ChIJiWle29XSJIgRUc10UKNa8qE",
+    "id": "ed3a3824-0367-4934-ba0b-f3f832f9aa32",
+    "restaurant": "Gather",
+    "link": "http://www.gatherdetroit.com/special-days/",
+    "latLng": {
+      "latitude": 42.34418959999999,
+      "longitude": -83.03796069999999
+    },
+    "city": "Detroit"
+  },
+  {
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$1 off medium IPA pours",
+        "time": "16:00-17:00"
+      }
+    ],
+    "city": "Detroit",
+    "placeId": "ChIJK4O94lXTJIgRzU2y9kmwnxY",
+    "id": "ee0f9460-21e0-43a1-9456-cb0570bd2e07",
+    "link": "http://www.gatherdetroit.com/special-days/",
+    "restaurant": "Cøllect",
+    "latLng": { "longitude": -83.03787879999999, "latitude": 42.34416799999999 }
+  },
+  {
+    "city": "Austin",
+    "placeId": "ChIJeZz8E-a0RIYR6uK07142hww",
+    "schedule": [
+      {
+        "days": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "scheduleDescription": "House white, rose or red for $5. Local taps $4. Snacks $4-$5",
+        "time": "16:00-18:00"
+      },
+      {
+        "scheduleDescription": "50% off bottles",
+        "days": ["Sunday", "Monday"],
+        "time": "16:00-23:00"
+      }
+    ],
+    "latLng": { "longitude": -97.75896009999997, "latitude": 30.2413562 },
+    "link": "http://austinwinebelly.com/specials",
+    "restaurant": "Winebelly",
+    "id": "ef2b9ee5-1bbd-47e7-ac96-8ef65a5f664c"
+  },
+  {
+    "latLng": { "latitude": 30.2819697, "longitude": -97.74017400000002 },
+    "schedule": [
+      {
+        "scheduleDescription": "$6 glasses of wine, $7 cocktails",
+        "time": "17:00-19:00",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      },
+      {
+        "time": "17:00-19:00",
+        "scheduleDescription": "$1 oysters",
+        "days": ["Tuesday"]
+      },
+      {
+        "days": ["Wednesday"],
+        "time": "17:00-22:00",
+        "scheduleDescription": "Texas Cheese Board and a Bottle of Wine for $25"
+      },
+      {
+        "days": ["Thursday"],
+        "time": "17:00-22:00",
+        "scheduleDescription": "Half off all bottles of wine"
+      }
+    ],
+    "restaurant": "The Carillon",
+    "city": "Austin",
+    "link": "http://www.thecarillonrestaurant.com/happy-hour",
+    "id": "f042af6a-4d90-47b7-b240-0ba34d47a21a",
+    "placeId": "ChIJ31rWc561RIYRM6R7nHWtUDo"
+  },
+  {
+    "link": "https://whislersatx.com/",
+    "placeId": "ChIJ1wVp97a1RIYR6eeMLojxHYo",
+    "id": "f529ef37-0577-40fb-8b60-f0747b173b85",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "time": "16:00-19:00",
+        "scheduleDescription": "$7 cocktails"
+      },
+      {
+        "days": ["Sunday", "Saturday"],
+        "time": "12:00-16:00",
+        "scheduleDescription": "$7 cocktails"
+      }
+    ],
+    "latLng": { "latitude": 30.2619325, "longitude": -97.72273799999999 },
+    "restaurant": "Whisler's",
+    "city": "Austin"
+  },
+  {
+    "city": "Austin",
+    "placeId": "ChIJWaH_cA-1RIYRNKX_6H4CwaA",
+    "latLng": { "longitude": -97.7493159, "latitude": 30.2649158 },
+    "id": "f6783b53-2197-400b-b3dd-a154a3d1332d",
+    "link": "http://atxcocina.com/",
+    "schedule": [
+      {
+        "days": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "scheduleDescription": "$7-8 margaritas and drinks, $3 off wine and draft beer, $6 bites",
+        "time": "16:30-18:30"
+      }
+    ],
+    "restaurant": "ATX Cocina"
+  },
+  {
+    "latLng": { "longitude": -83.0630961, "latitude": 42.35006519999999 },
+    "id": "f82794e8-a925-4f4c-9051-cf91dff762b5",
+    "placeId": "ChIJ9zhxTLfSJIgRvMViLzKl4O0",
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "scheduleDescription": "$3 select small plates, beer, wine",
+        "time": "15:00-18:00"
+      }
+    ],
+    "restaurant": "La Feria",
+    "link": "http://laferiadetroit.com/",
+    "city": "Detroit"
+  },
+  {
+    "restaurant": "Seva Detroit",
+    "city": "Detroit",
+    "id": "f8980b13-53b2-4c72-815e-c664a5cfe411",
+    "schedule": [
+      {
+        "time": "16:00-18:00",
+        "scheduleDescription": "1/2 off apps, wine, beer",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      }
+    ],
+    "link": "https://www.sevarestaurant.com/menus/d2%20HH.pdf",
+    "latLng": { "longitude": -83.0615584, "latitude": 42.35497520000001 },
+    "placeId": "ChIJf__SPrnSJIgRu36VRKFOdRs"
+  },
+  {
+    "link": "http://oliveandjune-austin.com/",
+    "placeId": "ChIJsf2nGIXKRIYRQsLVl2oxqFE",
+    "restaurant": "Olive & June",
+    "latLng": { "longitude": -97.75111700000002, "latitude": 30.307261 },
+    "schedule": [
+      {
+        "time": "17:00-18:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "50% off beer, cocktails, food"
+      },
+      {
+        "scheduleDescription": "50% off wine by the glass",
+        "time": "16:00-21:00",
+        "days": ["Monday"]
+      }
+    ],
+    "id": "fa8e05f3-387a-4d79-9c53-0918494fd29d",
+    "city": "Austin"
+  },
+  {
+    "id": "fae9890e-3eaf-430d-9f3d-0f2d74aea0e6",
+    "latLng": { "latitude": 42.2801556, "longitude": -83.7482889 },
+    "schedule": [
+      {
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "scheduleDescription": "$7 cocktails, $1 off select draft beer, $5 snacks",
+        "time": "16:00-18:00"
+      },
+      {
+        "days": ["Thursday"],
+        "time": "21:00-23:00",
+        "scheduleDescription": "$7 cocktails, $1 off select draft beer, $5 snacks"
+      }
+    ],
+    "restaurant": "The Ravens Club",
+    "city": "Ann Arbor",
+    "placeId": "ChIJ_4VJrT2uPIgR1IKkJ4D65F8",
+    "link": "http://theravensclub.com/the-ravens-clubs-new-happy-hour/"
+  }
+]
