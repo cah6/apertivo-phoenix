@@ -5,10 +5,10 @@ function GoogleMapWrapper(props) {
   useEffect(() => {
     var map = new google.maps.Map(document.getElementById("map"), {
       center: {
-        lat: -34.397,
-        lng: 150.644,
+        lat: 42.3314,
+        lng: -83.0458,
       },
-      zoom: 5,
+      zoom: 11,
       disableDefaultUI: true,
     });
 

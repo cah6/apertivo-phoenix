@@ -22,10 +22,14 @@ defmodule ApertivoWeb.PageLive do
 
     {
       :noreply,
-      push_event(socket, "new_map_items", %{
-        a: %{lat: lat1, lng: lng1}
-        # b: %{lat: rand_float(south, north), lng: rand_float(west, east)}
-      })
+      push_event(
+        socket,
+        "new_map_items",
+        %{
+          # a: %{lat: lat1, lng: lng1}
+          # b: %{lat: rand_float(south, north), lng: rand_float(west, east)}
+        }
+      )
     }
   end
 
