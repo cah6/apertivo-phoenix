@@ -20,13 +20,14 @@ defmodule ApertivoWeb.PageLive do
       socket.assigns()[:all_results]
       |> filter_results(new_bounds)
 
+    socket =
+      socket
+      |> push_event("new_results", %{"data" => visible})
+      |> assign(visible_results: visible)
+
     {
       :noreply,
-      push_event(
-        socket,
-        "new_results",
-        %{"data" => visible}
-      )
+      socket
     }
   end
 

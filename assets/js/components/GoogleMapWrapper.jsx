@@ -22,7 +22,8 @@ function GoogleMapWrapper(props) {
     if (handleEvent) {
       handleEvent("new_results", (payload) => {
         var newVisible = payload.data;
-        for (const item of newVisible) {
+        newVisible.forEach(function (item, index) {
+          // in the future, maybe diff to remove non-visible markers
           if (!markers.has(item.id)) {
             var newMarker = new google.maps.Marker({
               position: {
@@ -31,10 +32,19 @@ function GoogleMapWrapper(props) {
               },
               map: map,
               title: ".",
+              label: (index + 1).toString(),
+              icon: {
+                path: "M 100,0 0,100 -100,0 0,-100 100,0 z",
+                fillColor: "white",
+                fillOpacity: 0.8,
+                scale: 0.2,
+                strokeColor: "black",
+                strokeWeight: 2,
+              },
             });
             markers.set(item.id, newMarker);
           }
-        }
+        });
       });
     }
   });
