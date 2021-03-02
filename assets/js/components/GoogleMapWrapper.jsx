@@ -11,11 +11,20 @@ function GoogleMapWrapper(props) {
         lat: 42.3314,
         lng: -83.0458,
       },
-      zoom: 13,
+      zoom: 14,
       disableDefaultUI: true,
+      clickableIcons: false,
+    });
+
+    google.maps.event.addListenerOnce(map, "idle", function () {
+      pushEvent("bounds_changed", map.getBounds().toJSON());
     });
 
     map.addListener("dragend", () => {
+      pushEvent("bounds_changed", map.getBounds().toJSON());
+    });
+
+    map.addListener("zoom_changed", () => {
       pushEvent("bounds_changed", map.getBounds().toJSON());
     });
 
@@ -32,7 +41,7 @@ function GoogleMapWrapper(props) {
                 lng: item.latLng.longitude,
               },
               map: map,
-              title: ".",
+              title: item.restaurant,
               label: (index + 1).toString(),
               icon: makeIcon(false),
             });
@@ -66,6 +75,7 @@ function GoogleMapWrapper(props) {
           marker.setIcon(makeIcon(isSelected));
           if (isSelected) {
             map.panTo(marker.getPosition());
+            // pushEvent("bounds_changed", map.getBounds().toJSON());
           }
         });
 
