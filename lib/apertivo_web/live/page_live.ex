@@ -40,11 +40,15 @@ defmodule ApertivoWeb.PageLive do
     }
   end
 
-  def handle_event("marker_clicked", id, socket) do
+  def handle_event("item_selected", %{"id" => id}, socket) do
+    socket =
+      socket
+      |> push_event("set_selected_icon", %{"id" => id})
+      |> assign(selected: id)
+
     {
       :noreply,
       socket
-      |> assign(selected: id)
     }
   end
 

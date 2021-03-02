@@ -1,5 +1,6 @@
 <box-l class="reel-item" id="reel-item-<%=@hh["id"]%>"
-  style="--padding: var(--s1); --borderWidth: <%= borderWidth(@selected) %>">
+  style="--padding: var(--s1); --borderWidth: <%= borderWidth(@selected) %>" phx-click="item_selected"
+  phx-value-id="<%=@hh["id"]%>">
   <stack-l style="--space: 1rem">
     <h2>
       <%= "#{@index + 1}. " %>

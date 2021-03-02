@@ -11,7 +11,7 @@ function GoogleMapWrapper(props) {
         lat: 42.3314,
         lng: -83.0458,
       },
-      zoom: 11,
+      zoom: 13,
       disableDefaultUI: true,
     });
 
@@ -24,8 +24,9 @@ function GoogleMapWrapper(props) {
         var newVisible = payload.data;
         newVisible.forEach(function (item, index) {
           // in the future, maybe diff to remove non-visible markers
-          if (!markers.has(item.id)) {
-            var newMarker = new google.maps.Marker({
+          const marker = markers.get(item.id);
+          if (marker == undefined) {
+            const newMarker = new google.maps.Marker({
               position: {
                 lat: item.latLng.latitude,
                 lng: item.latLng.longitude,
@@ -36,20 +37,30 @@ function GoogleMapWrapper(props) {
               icon: makeIcon(false),
             });
             newMarker.addListener("click", () => {
-              var selectedId = item.id;
+              const selectedId = item.id;
 
-              pushEvent("marker_clicked", selectedId);
+              pushEvent("item_selected", { id: selectedId });
 
               // set icon thicker for selected item
               markers.forEach((marker, key) => {
                 marker.setIcon(makeIcon(selectedId == key));
               });
 
-              var el = document.getElementById(`reel-item-${selectedId}`);
-              el.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById(`reel-item-${selectedId}`)
+                .scrollIntoView({ behavior: "smooth" });
             });
             markers.set(item.id, newMarker);
+          } else {
+            marker.setLabel((index + 1).toString());
           }
+        });
+      });
+
+      handleEvent("set_selected_icon", (payload) => {
+        const selectedId = payload.id;
+        markers.forEach((marker, key) => {
+          marker.setIcon(makeIcon(selectedId == key));
         });
       });
     }
