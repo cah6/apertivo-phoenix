@@ -20,7 +20,6 @@ defmodule ApertivoWeb.PageLive do
         selected: nil
       )
 
-    # , temporary_assigns: [visible_results: []]}
     {:ok, socket}
   end
 
@@ -42,15 +41,10 @@ defmodule ApertivoWeb.PageLive do
   end
 
   def handle_event("marker_clicked", id, socket) do
-    IO.puts("#{id} was clicked.")
-
-    socket =
-      socket
-      |> assign(selected: id)
-
     {
       :noreply,
       socket
+      |> assign(selected: id)
     }
   end
 
