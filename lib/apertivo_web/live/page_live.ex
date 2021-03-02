@@ -11,7 +11,17 @@ defmodule ApertivoWeb.PageLive do
       File.read!("results.json")
       |> Jason.decode!()
 
-    {:ok, assign(socket, map_api_key: map_api_key, all_results: results, visible_results: %{})}
+    socket =
+      socket
+      |> assign(
+        map_api_key: map_api_key,
+        all_results: results,
+        visible_results: [],
+        selected: nil
+      )
+
+    # , temporary_assigns: [visible_results: []]}
+    {:ok, socket}
   end
 
   @impl true
@@ -31,6 +41,19 @@ defmodule ApertivoWeb.PageLive do
     }
   end
 
+  def handle_event("marker_clicked", id, socket) do
+    IO.puts("#{id} was clicked.")
+
+    socket =
+      socket
+      |> assign(selected: id)
+
+    {
+      :noreply,
+      socket
+    }
+  end
+
   defp filter_results(all, bounds) do
     %{"south" => s, "north" => n, "east" => e, "west" => w} = bounds
 
@@ -39,21 +62,5 @@ defmodule ApertivoWeb.PageLive do
       lng = hh["latLng"]["longitude"]
       lat > s && lat < n && lng > w && lng < e
     end)
-  end
-
-  defp daysOrdered() do
-    ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-  end
-
-  defp abbreviate(day) do
-    case day do
-      "Sunday" -> "S"
-      "Monday" -> "M"
-      "Tuesday" -> "T"
-      "Wednesday" -> "W"
-      "Thursday" -> "T"
-      "Friday" -> "F"
-      "Saturday" -> "S"
-    end
   end
 end

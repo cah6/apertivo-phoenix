@@ -10,27 +10,26 @@ export default class Cluster extends HTMLElement {
   constructor() {
     super();
     this.render = () => {
-      this.i = `Cluster-${[this.justify, this.align, this.space].join("")}`;
-      this.id = "_" + Math.random().toString(36).substr(2, 9);
-      this.dataset.i = this.i;
-      if (!document.getElementById(this.i)) {
-        let styleEl = document.createElement("style");
-        styleEl.id = this.i;
-        styleEl.innerHTML = `
-          [data-i="${this.i}"] > * {
-            justify-content: ${this.justify};
-            align-items: ${this.align};
-            margin: calc(${this.space} / 2 * -1);
-          }
-
-          [data-i="${this.i}"] > * > * {
-            margin: calc(${this.space} / 2);
-          }
-        `
-          .replace(/\s\s+/g, " ")
-          .trim();
-        document.head.appendChild(styleEl);
-      }
+      // this.i = `Cluster-${[this.justify, this.align, this.space].join("")}`;
+      // // this.id = "_" + Math.random().toString(36).substr(2, 9);
+      // this.dataset.i = this.i;
+      // if (!document.getElementById(this.i)) {
+      //   let styleEl = document.createElement("style");
+      //   styleEl.id = this.i;
+      //   styleEl.innerHTML = `
+      //     [data-i="${this.i}"] > * {
+      //       justify-content: ${this.justify};
+      //       align-items: ${this.align};
+      //       margin: calc(${this.space} / 2 * -1);
+      //     }
+      //     [data-i="${this.i}"] > * > * {
+      //       margin: calc(${this.space} / 2);
+      //     }
+      //   `
+      //     .replace(/\s\s+/g, " ")
+      //     .trim();
+      //   document.head.appendChild(styleEl);
+      // }
     };
   }
 

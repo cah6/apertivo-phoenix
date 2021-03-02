@@ -10,32 +10,34 @@ export default class Box extends HTMLElement {
   constructor() {
     super();
     this.render = () => {
-      this.i = `Box-${[this.padding, this.borderWidth, this.invert].join("")}`;
-      this.id = "_" + Math.random().toString(36).substr(2, 9);
-      this.dataset.i = this.i;
-      if (!document.getElementById(this.i)) {
-        let styleEl = document.createElement("style");
-        styleEl.id = this.i;
-        styleEl.innerHTML = `
-          [data-i="${this.i}"] {
-            padding: ${this.padding};
-            border: ${this.borderWidth} solid;
-            ${
-              this.invert
-                ? `background-color: var(--color-light);
-              filter: invert(100%);`
-                : ""
-            }
-          }
-
-          [data-i="${this.i}"] {
-            background-color: inherit;
-          }
-        `
-          .replace(/\s\s+/g, " ")
-          .trim();
-        document.head.appendChild(styleEl);
-      }
+      // this.i = `Box-${[this.padding, this.borderWidth, this.invert].join("")}`;
+      // this.id = "_" + Math.random().toString(36).substr(2, 9);
+      // this.id = this.id
+      //   ? this.id
+      //   : "_" + Math.random().toString(36).substr(2, 9);
+      // this.dataset.i = this.i;
+      // if (!document.getElementById(this.i)) {
+      //   let styleEl = document.createElement("style");
+      //   styleEl.id = this.i;
+      //   styleEl.innerHTML = `
+      //     [data-i="${this.i}"] {
+      //       padding: ${this.padding};
+      //       border: ${this.borderWidth} solid;
+      //       ${
+      //         this.invert
+      //           ? `background-color: var(--color-light);
+      //         filter: invert(100%);`
+      //           : ""
+      //       }
+      //     }
+      //     [data-i="${this.i}"] {
+      //       background-color: inherit;
+      //     }
+      //   `
+      //     .replace(/\s\s+/g, " ")
+      //     .trim();
+      //   document.head.appendChild(styleEl);
+      // }
     };
   }
 

@@ -11,58 +11,55 @@ export default class Reel extends HTMLElement {
   constructor() {
     super();
     this.render = () => {
-      this.i = `Reel-${[
-        this.itemWidth,
-        this.height,
-        this.space,
-        this.noBar,
-      ].join("")}`;
-      this.id = "_" + Math.random().toString(36).substr(2, 9);
-      this.dataset.i = this.i;
-      if (!document.getElementById(this.i)) {
-        let styleEl = document.createElement("style");
-        styleEl.id = this.i;
-        styleEl.innerHTML = `
-          [data-i="${this.i}"] {
-            height: ${this.height};
-          }
-
-          [data-i="${this.i}"] > * {
-            flex: 0 0 ${this.itemWidth};
-          }
-
-          [data-i="${this.i}"] > img {
-            height: 100%;
-            flex-basis: auto;
-            width: auto;
-          }
-
-          [data-i="${this.i}"] > * + * {
-            margin-left: ${this.space};
-          }
-
-          [data-i="${this.i}"].overflowing {
-            ${!this.noBar ? `padding-bottom: ${this.space}` : ""}
-          }
-
-          ${
-            this.noBar
-              ? `
-          [data-i="${this.i}"] {
-            scrollbar-width: none;
-          }
-
-          [data-i="${this.i}"]::-webkit-scrollbar {
-            display: none;
-          }
-          `
-              : ""
-          }
-        `
-          .replace(/\s\s+/g, " ")
-          .trim();
-        document.head.appendChild(styleEl);
-      }
+      // this.i = `Reel-${[
+      //   this.itemWidth,
+      //   this.height,
+      //   this.space,
+      //   this.noBar,
+      // ].join("")}`;
+      // this.id = this.id
+      //   ? this.id
+      //   : "_" + Math.random().toString(36).substr(2, 9);
+      // // this.id = "_" + Math.random().toString(36).substr(2, 9);
+      // this.dataset.i = this.i;
+      // if (!document.getElementById(this.i)) {
+      //   let styleEl = document.createElement("style");
+      //   styleEl.id = this.i;
+      //   styleEl.innerHTML = `
+      //     [data-i="${this.i}"] {
+      //       height: ${this.height};
+      //     }
+      //     [data-i="${this.i}"] > * {
+      //       flex: 0 0 ${this.itemWidth};
+      //     }
+      //     [data-i="${this.i}"] > img {
+      //       height: 100%;
+      //       flex-basis: auto;
+      //       width: auto;
+      //     }
+      //     [data-i="${this.i}"] > * + * {
+      //       margin-left: ${this.space};
+      //     }
+      //     [data-i="${this.i}"].overflowing {
+      //       ${!this.noBar ? `padding-bottom: ${this.space}` : ""}
+      //     }
+      //     ${
+      //       this.noBar
+      //         ? `
+      //     [data-i="${this.i}"] {
+      //       scrollbar-width: none;
+      //     }
+      //     [data-i="${this.i}"]::-webkit-scrollbar {
+      //       display: none;
+      //     }
+      //     `
+      //         : ""
+      //     }
+      //   `
+      //     .replace(/\s\s+/g, " ")
+      //     .trim();
+      //   document.head.appendChild(styleEl);
+      // }
     };
   }
 
@@ -110,25 +107,25 @@ export default class Reel extends HTMLElement {
     return ["itemWidth", "height", "space", "noBar"];
   }
 
-  connectedCallback() {
-    this.render();
-    if ("ResizeObserver" in window) {
-      new ResizeObserver((entries) => {
-        console.log("resize");
-        this.toggleOverflowClass(entries[0].target);
-      }).observe(this);
-    }
+  // connectedCallback() {
+  //   this.render();
+  //   if ("ResizeObserver" in window) {
+  //     new ResizeObserver((entries) => {
+  //       console.log("resize");
+  //       this.toggleOverflowClass(entries[0].target);
+  //     }).observe(this);
+  //   }
 
-    if ("MutationObserver" in window) {
-      new MutationObserver((entries) => {
-        this.toggleOverflowClass(entries[0].target);
-      }).observe(this, { childList: true });
-    }
-  }
+  //   if ("MutationObserver" in window) {
+  //     new MutationObserver((entries) => {
+  //       this.toggleOverflowClass(entries[0].target);
+  //     }).observe(this, { childList: true });
+  //   }
+  // }
 
-  attributeChangedCallback() {
-    this.render();
-  }
+  // attributeChangedCallback() {
+  //   this.render();
+  // }
 }
 
 if ("customElements" in window) {

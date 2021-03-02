@@ -1,0 +1,34 @@
+<box-l class="reel-item" id="reel-item-<%=@hh["id"]%>"
+    style="--padding: var(--s1); --borderWidth: <%= borderWidth(@selected) %>">
+    <div class="stack" style="--space: 1rem">
+        <h2>
+            <%= "#{@index + 1}. " %>
+            <a href="<%= @hh["link"] %>"><%= @hh["restaurant"] %></a>
+        </h2>
+        <%= for schedule <- @hh["schedule"] do %>
+        <stack-l>
+            <cluster-l style="--justify: space-between">
+                <ul>
+                    <li>
+                        <cluster-l style="--space: 0.5rem">
+                            <ul>
+                                <%= for day <- daysOrdered() do %>
+                                <%= if Enum.member?(schedule["days"], day) do %>
+                                <li class="day-active"><%= abbreviate(day) %></li>
+                                <% else %>
+                                <li class="day-inactive"><%= abbreviate(day) %></li>
+                                <% end %>
+                                <% end %>
+                            </ul>
+                        </cluster-l>
+                    </li>
+                    <li>
+                        <p><%= schedule["time"] %></p>
+                    </li>
+                </ul>
+            </cluster-l>
+            <p><%= schedule["scheduleDescription"] %></p>
+        </stack-l>
+        <% end %>
+    </div>
+</box-l>

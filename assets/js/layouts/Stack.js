@@ -11,36 +11,34 @@ export default class Stack extends HTMLElement {
   constructor() {
     super();
     this.render = () => {
-      this.i = `Stack-${[this.space, this.recursive, this.splitAfter].join(
-        ""
-      )}`;
-      this.id = "_" + Math.random().toString(36).substr(2, 9);
-      this.dataset.i = this.i;
-      if (!document.getElementById(this.i)) {
-        let styleEl = document.createElement("style");
-        styleEl.id = this.i;
-        styleEl.innerHTML = `
-          [data-i="${this.i}"]${this.recursive ? "" : " >"} * + * {
-            margin-top: ${this.space};
-          }
-
-          ${
-            this.splitAfter
-              ? `
-            [data-i="${this.i}"]:only-child {
-              height: 100%;
-            }
-
-            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {
-              margin-bottom: auto;
-            }`
-              : ""
-          }
-        `
-          .replace(/\s\s+/g, " ")
-          .trim();
-        document.head.appendChild(styleEl);
-      }
+      // this.i = `Stack-${[this.space, this.recursive, this.splitAfter].join(
+      //   ""
+      // )}`;
+      // // this.id = "_" + Math.random().toString(36).substr(2, 9);
+      // this.dataset.i = this.i;
+      // if (!document.getElementById(this.i)) {
+      //   let styleEl = document.createElement("style");
+      //   styleEl.id = this.i;
+      //   styleEl.innerHTML = `
+      //     [data-i="${this.i}"]${this.recursive ? "" : " >"} * + * {
+      //       margin-top: ${this.space};
+      //     }
+      //     ${
+      //       this.splitAfter
+      //         ? `
+      //       [data-i="${this.i}"]:only-child {
+      //         height: 100%;
+      //       }
+      //       [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {
+      //         margin-bottom: auto;
+      //       }`
+      //         : ""
+      //     }
+      //   `
+      //     .replace(/\s\s+/g, " ")
+      //     .trim();
+      //   document.head.appendChild(styleEl);
+      // }
     };
   }
 

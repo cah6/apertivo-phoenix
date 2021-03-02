@@ -1,49 +1,12 @@
-<%# load up google map library with server key %>
-<script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=" defer></script>
-
 <div>
   <%= live_react_component("Components.GoogleMapWrapper", %{}, id: "google-map-wrapper-1") %>
-
-  <div class="footer">
-    <box-l padding="0.5rem" class="footer-box">
-      <reel-l itemWidth="auto" noBar>
+  <div class="footer" id="footer">
+    <box-l style="--padding: 0.5rem">
+      <reel-l class="noBar">
         <%= for {hh, index} <- Enum.with_index(@visible_results) do %>
-        <box-l class="reel-item" id="reel-item-1">
-          <stack-l space="1rem">
-            <h2>
-              <%= "#{index + 1}. " %>
-              <a href="<%= hh["link"] %>"><%= hh["restaurant"] %></a>
-            </h2>
-            <%= for schedule <- hh["schedule"] do %>
-            <stack-l>
-              <cluster-l justify="space-between" space="--s1">
-                <ul>
-                  <li>
-                    <cluster-l space="0.5rem">
-                      <ul>
-                        <%= for day <- daysOrdered() do %>
-                        <%= if Enum.member?(schedule["days"], day) do %>
-                        <li class="day-active"><%= abbreviate(day) %></li>
-                        <% else %>
-                        <li class="day-inactive"><%= abbreviate(day) %></li>
-                        <% end %>
-                        <% end %>
-                      </ul>
-                    </cluster-l>
-                  </li>
-                  <li>
-                    <p><%= schedule["time"] %></p>
-                  </li>
-                </ul>
-              </cluster-l>
-              <p><%= schedule["scheduleDescription"] %></p>
-            </stack-l>
-            <% end %>
-          </stack-l>
-        </box-l>
+        <%= live_component @socket, ApertivoWeb.ReelItem, id: hh["id"], index: index, hh: hh, selected: @selected == hh["id"]%>
         <% end %>
       </reel-l>
     </box-l>
-
   </div>
 </div>

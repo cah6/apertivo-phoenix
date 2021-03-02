@@ -33,14 +33,20 @@ function GoogleMapWrapper(props) {
               map: map,
               title: ".",
               label: (index + 1).toString(),
-              icon: {
-                path: "M 100,0 0,100 -100,0 0,-100 100,0 z",
-                fillColor: "white",
-                fillOpacity: 0.8,
-                scale: 0.2,
-                strokeColor: "black",
-                strokeWeight: 2,
-              },
+              icon: makeIcon(false),
+            });
+            newMarker.addListener("click", () => {
+              var selectedId = item.id;
+
+              pushEvent("marker_clicked", selectedId);
+
+              // set icon thicker for selected item
+              markers.forEach((marker, key) => {
+                marker.setIcon(makeIcon(selectedId == key));
+              });
+
+              var el = document.getElementById(`reel-item-${selectedId}`);
+              el.scrollIntoView({ behavior: "smooth" });
             });
             markers.set(item.id, newMarker);
           }
@@ -52,10 +58,16 @@ function GoogleMapWrapper(props) {
   return <div id="map"></div>;
 }
 
-function itemsToMarkers(map, values) {
-  for (let [key, value] of Object.entries(values)) {
-    new google.maps.Marker({ position: value, map: map, title: key });
-  }
+function makeIcon(isSelected) {
+  var strokeWeight = isSelected ? 4 : 2;
+  return {
+    path: "M 100,0 0,100 -100,0 0,-100 100,0 z",
+    fillColor: "white",
+    fillOpacity: 0.8,
+    scale: 0.2,
+    strokeColor: "black",
+    strokeWeight: strokeWeight,
+  };
 }
 
 export default GoogleMapWrapper;

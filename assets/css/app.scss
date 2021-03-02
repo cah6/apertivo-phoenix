@@ -135,7 +135,8 @@ reel-l {
 }
 
 // should box-l be capped here too?
-reel-l {
+reel-l,
+box-l {
   max-width: 100vw;
 }
 
@@ -164,7 +165,7 @@ stack-l {
 }
 
 stack-l > * + * {
-  margin-top: var(--space);
+  margin-top: var(--space, var(--s1));
 }
 
 stack-l:only-child {
@@ -184,15 +185,16 @@ stack-l:only-child {
 
 box-l {
   display: block;
-  padding: var(--s1);
-  border-width: var(--border-thin);
+  padding: var(--padding, var(--s1));
+  border: var(--borderWidth, var(--border-thin)) solid;
+  // border-width: var(--border-thin);
   /* ↓ For high contrast mode */
   outline: var(--border-thin) solid transparent;
   outline-offset: calc(var(--border-thin) * -1);
 
   // CUSTOM
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  // color: var(--color-dark);
+  // background-color: var(--color-light);
 }
 
 box-l * {
@@ -217,15 +219,16 @@ reel-l {
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-color: var(--color-light) var(--color-dark);
-  height: var(--height);
+  height: var(--height, auto);
+  scrollbar-width: none;
 }
 
 reel-l > * {
-  flex: 0 0 var(--itemWidth);
+  flex: 0 0 var(--itemWidth, auto);
 }
 
 reel-l > * + * {
-  margin-left: var(--space);
+  margin-left: var(--space, var(--s0));
 }
 
 reel-l > img {
@@ -236,6 +239,9 @@ reel-l > img {
 
 reel-l::-webkit-scrollbar {
   height: 1rem;
+}
+reel-l.noBar::-webkit-scrollbar {
+  display: none;
 }
 
 reel-l::-webkit-scrollbar-track {
@@ -251,6 +257,14 @@ reel-l::-webkit-scrollbar-thumb {
     var(--color-light) 0.75rem,
     var(--color-dark) 0.75rem
   );
+}
+
+reel-l.overflowing.noBar {
+  padding-bottom: var(--space, var(--s0));
+}
+
+reel-l.noBar {
+  scrollbar-width: none;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -280,13 +294,13 @@ center-l {
 cluster-l > * {
   display: flex;
   flex-wrap: wrap;
-  justify-content: var(--justify);
-  align-items: var(--align);
-  margin: calc(var(--space) / 2 * -1);
+  justify-content: var(--justify, center);
+  align-items: var(--align, center);
+  margin: calc(var(--space, var(--s1)) / 2 * -1);
 }
 
 cluster-l > * > * {
-  margin: calc(var(--space) / 2);
+  margin: calc(var(--space, var(--s1)) / 2);
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -426,10 +440,6 @@ ul {
   bottom: 0;
   left: 0;
   background-color: var(--color-light);
-}
-
-.footer-box {
-  max-width: 100vw;
 }
 
 #map {
