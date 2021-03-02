@@ -48,7 +48,9 @@ function GoogleMapWrapper(props) {
 
               document
                 .getElementById(`reel-item-${selectedId}`)
-                .scrollIntoView({ behavior: "smooth" });
+                .scrollIntoView({
+                  behavior: "smooth",
+                });
             });
             markers.set(item.id, newMarker);
           } else {
@@ -66,6 +68,10 @@ function GoogleMapWrapper(props) {
             map.panTo(marker.getPosition());
           }
         });
+
+        document
+          .getElementById(`reel-item-${selectedId}`)
+          .scrollIntoView({ behavior: "smooth" });
       });
     }
   });
