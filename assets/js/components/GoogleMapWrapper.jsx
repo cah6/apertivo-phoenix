@@ -60,7 +60,11 @@ function GoogleMapWrapper(props) {
       handleEvent("set_selected_icon", (payload) => {
         const selectedId = payload.id;
         markers.forEach((marker, key) => {
-          marker.setIcon(makeIcon(selectedId == key));
+          const isSelected = selectedId == key;
+          marker.setIcon(makeIcon(isSelected));
+          if (isSelected) {
+            map.panTo(marker.getPosition());
+          }
         });
       });
     }
