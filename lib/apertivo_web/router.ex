@@ -18,6 +18,13 @@ defmodule ApertivoWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+
+    live "/happy_hours", HappyHourLive.Index, :index
+    live "/happy_hours/new", HappyHourLive.Index, :new
+    live "/happy_hours/:id/edit", HappyHourLive.Index, :edit
+
+    live "/happy_hours/:id", HappyHourLive.Show, :show
+    live "/happy_hours/:id/show/edit", HappyHourLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.

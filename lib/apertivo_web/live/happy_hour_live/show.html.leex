@@ -1,0 +1,47 @@
+<h1>Show Happy hour</h1>
+
+<%= if @live_action in [:edit] do %>
+  <%= live_modal @socket, ApertivoWeb.HappyHourLive.FormComponent,
+    id: @happy_hour.id,
+    title: @page_title,
+    action: @live_action,
+    happy_hour: @happy_hour,
+    return_to: Routes.happy_hour_show_path(@socket, :show, @happy_hour) %>
+<% end %>
+
+<ul>
+
+  <li>
+    <strong>Link:</strong>
+    <%= @happy_hour.link %>
+  </li>
+
+  <li>
+    <strong>Restaurant:</strong>
+    <%= @happy_hour.restaurant %>
+  </li>
+
+  <li>
+    <strong>Place:</strong>
+    <%= @happy_hour.place_id %>
+  </li>
+
+  <li>
+    <strong>Schedule:</strong>
+    <%= @happy_hour.schedule %>
+  </li>
+
+  <li>
+    <strong>Latlng:</strong>
+    <%= @happy_hour.latLng %>
+  </li>
+
+  <li>
+    <strong>City:</strong>
+    <%= @happy_hour.city %>
+  </li>
+
+</ul>
+
+<span><%= live_patch "Edit", to: Routes.happy_hour_show_path(@socket, :edit, @happy_hour), class: "button" %></span>
+<span><%= live_redirect "Back", to: Routes.happy_hour_index_path(@socket, :index) %></span>
