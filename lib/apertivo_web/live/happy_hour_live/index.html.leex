@@ -1,45 +1,27 @@
-<h1>Listing Happy hours</h1>
+<div>
+  <%# load up google map library with server key %>
+  <script src="https://maps.googleapis.com/maps/api/js?key=<%=@map_api_key%>&callback=" defer></script>
 
-<%= if @live_action in [:new, :edit] do %>
+  <%= live_react_component("Components.GoogleMapWrapper", %{}, id: "google-map-wrapper-1") %>
+
+  <%= if @live_action in [:new, :edit] do %>
   <%= live_modal @socket, ApertivoWeb.HappyHourLive.FormComponent,
     id: @happy_hour.id || :new,
     title: @page_title,
     action: @live_action,
     happy_hour: @happy_hour,
     return_to: Routes.happy_hour_index_path(@socket, :index) %>
-<% end %>
+  <% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Link</th>
-      <th>Restaurant</th>
-      <th>Place</th>
-      <th>Schedule</th>
-      <th>Latlng</th>
-      <th>City</th>
 
-      <th></th>
-    </tr>
-  </thead>
-  <tbody id="happy_hours">
-    <%= for happy_hour <- @happy_hours do %>
-      <tr id="happy_hour-<%= happy_hour.id %>">
-        <td><%= happy_hour.link %></td>
-        <td><%= happy_hour.restaurant %></td>
-        <td><%= happy_hour.place_id %></td>
-        <td><%= happy_hour.schedule %></td>
-        <td><%= happy_hour.latLng %></td>
-        <td><%= happy_hour.city %></td>
-
-        <td>
-          <span><%= live_redirect "Show", to: Routes.happy_hour_show_path(@socket, :show, happy_hour) %></span>
-          <span><%= live_patch "Edit", to: Routes.happy_hour_index_path(@socket, :edit, happy_hour) %></span>
-          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: happy_hour.id, data: [confirm: "Are you sure?"] %></span>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<span><%= live_patch "New Happy hour", to: Routes.happy_hour_index_path(@socket, :new) %></span>
+  <div class="footer" id="footer">
+    <span><%= live_patch "New Happy hour", to: Routes.happy_hour_index_path(@socket, :new) %></span>
+    <box-l style="--padding: 0.5rem">
+      <reel-l class="noBar">
+        <%= for {hh, index} <- Enum.with_index(@visible_results) do %>
+        <%= live_component @socket, ApertivoWeb.ReelItem, id: hh["id"], index: index, hh: hh, selected: @selected == hh["id"]%>
+        <% end %>
+      </reel-l>
+    </box-l>
+  </div>
+</div>
