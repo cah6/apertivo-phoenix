@@ -1,6 +1,6 @@
 <box-l class="reel-item" id="reel-item-<%=@hh["id"]%>"
   style="--padding: var(--s1); --borderWidth: <%= borderWidth(@selected) %>">
-  <div class="stack" style="--space: 1rem">
+  <stack-l style="--space: 1rem">
     <h2>
       <%= "#{@index + 1}. " %>
       <a href="<%= @hh["link"] %>"><%= @hh["restaurant"] %></a>
@@ -30,5 +30,5 @@
       <p><%= schedule["scheduleDescription"] %></p>
     </stack-l>
     <% end %>
-  </div>
+  </stack-l>
 </box-l>
