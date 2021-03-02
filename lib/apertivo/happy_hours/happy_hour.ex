@@ -6,7 +6,7 @@ defmodule Apertivo.HappyHours.HappyHour do
   @foreign_key_type :binary_id
   schema "happy_hours" do
     field :city, :string
-    field :latLng, :map
+    field :location, Geo.PostGIS.Geometry
     field :link, :string
     field :place_id, :string
     field :restaurant, :string
@@ -18,7 +18,7 @@ defmodule Apertivo.HappyHours.HappyHour do
   @doc false
   def changeset(happy_hour, attrs) do
     happy_hour
-    |> cast(attrs, [:link, :restaurant, :place_id, :schedule, :latLng, :city])
-    |> validate_required([:link, :restaurant, :place_id, :schedule, :latLng, :city])
+    |> cast(attrs, [:link, :restaurant, :place_id, :schedule, :location, :city])
+    |> validate_required([:link, :restaurant, :place_id, :schedule, :location, :city])
   end
 end

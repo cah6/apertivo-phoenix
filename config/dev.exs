@@ -2,6 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :apertivo, Apertivo.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  types: Apertivo.PostgresTypes,
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

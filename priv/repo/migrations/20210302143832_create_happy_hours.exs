@@ -8,7 +8,7 @@ defmodule Apertivo.Repo.Migrations.CreateHappyHours do
       add :restaurant, :string
       add :place_id, :string
       add :schedule, {:array, :map}
-      add :latLng, :map
+      add :location, :geometry
       add :city, :string
 
       timestamps()
