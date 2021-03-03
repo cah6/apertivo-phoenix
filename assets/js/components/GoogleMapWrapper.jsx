@@ -81,7 +81,7 @@ function GoogleMapWrapper(props) {
 
         document
           .getElementById(`reel-item-${selectedId}`)
-          .scrollIntoView({ behavior: "smooth" });
+          .scrollIntoView({ behavior: "smooth", inline: "center" });
       });
     }
   });
