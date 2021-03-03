@@ -117,7 +117,7 @@ function makeIcon(isSelected) {
 function makeInfoWindow(item) {
   const daysActive = ["M", "T", "W"];
   return `
-<box-l>
+<box-l style="--borderWidth: 0px; --padding: 0.5rem">
   <h3>${item.restaurant}</h3>
   ${makeDayList(daysActive)}
 </box-l>

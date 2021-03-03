@@ -451,13 +451,13 @@ ul {
 }
 
 .gm-style-iw {
-  // overflow not needed if there's a box inside
-  // overflow-y: hidden !important;
-  // overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  padding: 0px 0px 0px 0px !important;
+}
 
-  // padding numbers to try to match what gmaps puts on right/bottom, can't
-  // figure out how to get rid of those.
-  padding: 15px 0px 0px 17px !important;
+.gm-style-iw > div {
+  overflow: visible !important;
 }
 
 .gm-style-iw > button {
