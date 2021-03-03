@@ -116,6 +116,8 @@ function makeIcon(isSelected) {
 
 function makeInfoWindow(item) {
   const daysActive = ["M", "T", "W"];
+  // Can style normally for the most part, but remember that the gmaps classes
+  // apply some inline styles that might make it appear different.
   return `
 <box-l style="--borderWidth: 0px; --padding: 0.5rem">
   <h3>${item.restaurant}</h3>
