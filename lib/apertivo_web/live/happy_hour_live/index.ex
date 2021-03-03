@@ -60,7 +60,6 @@ defmodule ApertivoWeb.HappyHourLive.Index do
 
   @impl true
   def handle_event("bounds_changed", new_bounds, socket) do
-    # list_happy_hours()
     visible =
       socket.assigns()[:all_results]
       |> filter_results(new_bounds)

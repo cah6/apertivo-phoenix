@@ -47,14 +47,13 @@ function GoogleMapWrapper(props) {
             });
 
             const infoWindow = new google.maps.InfoWindow({
-              content: `<h3>${item.restaurant}</h3>`,
+              content: makeInfoWindow(item),
             });
 
             newMarker.addListener("mouseover", function () {
               infoWindow.open(map, this);
             });
 
-            // assuming you also want to hide the infowindow when user mouses-out
             newMarker.addListener("mouseout", function () {
               infoWindow.close();
             });
@@ -113,6 +112,25 @@ function makeIcon(isSelected) {
     strokeColor: "black",
     strokeWeight: strokeWeight,
   };
+}
+
+function makeInfoWindow(item) {
+  const daysActive = ["M", "T", "W"];
+  return `
+<box-l>
+  <h3>${item.restaurant}</h3>
+  ${makeDayList(daysActive)}
+</box-l>
+  `;
+}
+
+function makeDayList(activeDays) {
+  const items = activeDays.map((day) => makeDay(day)).join("");
+  return `<cluster-l style="--space: 0.5rem"><ul>${items}</ul></cluster-l>`;
+}
+
+function makeDay(day) {
+  return `<li class="day-active">${day}</li>`;
 }
 
 export default GoogleMapWrapper;
