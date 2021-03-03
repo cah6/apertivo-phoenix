@@ -41,10 +41,24 @@ function GoogleMapWrapper(props) {
                 lng: item.lng,
               },
               map: map,
-              title: item.restaurant,
+              title: "",
               label: (index + 1).toString(),
               icon: makeIcon(false),
             });
+
+            const infoWindow = new google.maps.InfoWindow({
+              content: `<h3>${item.restaurant}</h3>`,
+            });
+
+            newMarker.addListener("mouseover", function () {
+              infoWindow.open(map, this);
+            });
+
+            // assuming you also want to hide the infowindow when user mouses-out
+            newMarker.addListener("mouseout", function () {
+              infoWindow.close();
+            });
+
             newMarker.addListener("click", () => {
               const selectedId = item.id;
 
