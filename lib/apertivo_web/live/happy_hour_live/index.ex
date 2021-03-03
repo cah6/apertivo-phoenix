@@ -9,9 +9,7 @@ defmodule ApertivoWeb.HappyHourLive.Index do
   def mount(_params, _session, socket) do
     map_api_key = Application.get_env(:apertivo, ApertivoWeb.Endpoint)[:google_maps_api_key]
 
-    results =
-      File.read!("results.json")
-      |> Jason.decode!()
+    results = list_happy_hours()
 
     socket =
       socket
@@ -62,13 +60,21 @@ defmodule ApertivoWeb.HappyHourLive.Index do
 
   @impl true
   def handle_event("bounds_changed", new_bounds, socket) do
+    # list_happy_hours()
     visible =
       socket.assigns()[:all_results]
       |> filter_results(new_bounds)
 
+    visible_map_data =
+      visible
+      |> Enum.map(fn hh ->
+        {lng, lat} = hh.location.coordinates
+        %{id: hh.id, restaurant: hh.restaurant, lng: lng, lat: lat}
+      end)
+
     socket =
       socket
-      |> push_event("new_results", %{"data" => visible})
+      |> push_event("new_results", %{"data" => visible_map_data})
       |> assign(visible_results: visible)
 
     {
@@ -93,8 +99,7 @@ defmodule ApertivoWeb.HappyHourLive.Index do
     %{"south" => s, "north" => n, "east" => e, "west" => w} = bounds
 
     Enum.filter(all, fn hh ->
-      lat = hh["latLng"]["latitude"]
-      lng = hh["latLng"]["longitude"]
+      {lng, lat} = hh.location.coordinates
       lat > s && lat < n && lng > w && lng < e
     end)
   end

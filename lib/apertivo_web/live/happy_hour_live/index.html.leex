@@ -18,8 +18,12 @@
     <span><%= live_patch "New Happy hour", to: Routes.happy_hour_index_path(@socket, :new) %></span>
     <box-l style="--padding: 0.5rem">
       <reel-l class="noBar">
+        <box-l>
+          <button phx-click="create_happy_hour">Create New</button>
+        </box-l>
+
         <%= for {hh, index} <- Enum.with_index(@visible_results) do %>
-        <%= live_component @socket, ApertivoWeb.ReelItem, id: hh["id"], index: index, hh: hh, selected: @selected == hh["id"]%>
+        <%= live_component @socket, ApertivoWeb.ReelItem, id: hh.id, index: index, hh: hh, selected: @selected == hh.id%>
         <% end %>
       </reel-l>
     </box-l>

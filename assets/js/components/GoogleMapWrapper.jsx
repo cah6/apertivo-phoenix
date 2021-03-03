@@ -37,8 +37,8 @@ function GoogleMapWrapper(props) {
           if (marker == undefined) {
             const newMarker = new google.maps.Marker({
               position: {
-                lat: item.latLng.latitude,
-                lng: item.latLng.longitude,
+                lat: item.lat,
+                lng: item.lng,
               },
               map: map,
               title: item.restaurant,
