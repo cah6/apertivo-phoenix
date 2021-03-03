@@ -1,7 +1,7 @@
 <h1>Show Happy hour</h1>
 
 <%= if @live_action in [:edit] do %>
-  <%= live_modal @socket, ApertivoWeb.HappyHourLive.FormComponent,
+<%= live_modal @socket, ApertivoWeb.HappyHourLive.FormComponent,
     id: @happy_hour.id,
     title: @page_title,
     action: @live_action,
@@ -32,8 +32,8 @@
   </li>
 
   <li>
-    <strong>Latlng:</strong>
-    <%= @happy_hour.latLng %>
+    <strong>Location:</strong>
+    <%= @happy_hour.location %>
   </li>
 
   <li>
