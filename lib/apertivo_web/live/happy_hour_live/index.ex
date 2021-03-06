@@ -16,8 +16,10 @@ defmodule ApertivoWeb.HappyHourLive.Index do
       |> assign(
         map_api_key: map_api_key,
         all_results: results,
-        visible_results: [],
-        selected: nil
+        visible_results: results,
+        selected: nil,
+        filter: :filter,
+        today: get_day_of_week()
       )
 
     {:ok, socket}
@@ -52,10 +54,6 @@ defmodule ApertivoWeb.HappyHourLive.Index do
     {:ok, _} = HappyHours.delete_happy_hour(happy_hour)
 
     {:noreply, assign(socket, :happy_hours, list_happy_hours())}
-  end
-
-  defp list_happy_hours do
-    HappyHours.list_happy_hours()
   end
 
   @impl true
@@ -94,6 +92,16 @@ defmodule ApertivoWeb.HappyHourLive.Index do
     }
   end
 
+  def handle_event("filter", %{"filter" => filter}, socket) do
+    %{"day" => day} = filter
+
+    {:noreply, socket}
+  end
+
+  defp list_happy_hours do
+    HappyHours.list_happy_hours()
+  end
+
   defp filter_results(all, bounds) do
     %{"south" => s, "north" => n, "east" => e, "west" => w} = bounds
 
@@ -101,5 +109,27 @@ defmodule ApertivoWeb.HappyHourLive.Index do
       {lng, lat} = hh.location.coordinates
       lat > s && lat < n && lng > w && lng < e
     end)
+  end
+
+  defp daysOrdered() do
+    ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  end
+
+  defp get_day_of_week() do
+    Date.utc_today()
+    |> Date.day_of_week()
+    |> day_num_to_string()
+  end
+
+  defp day_num_to_string(day_num) do
+    case day_num do
+      1 -> "Monday"
+      2 -> "Tuesday"
+      3 -> "Wednesday"
+      4 -> "Thursday"
+      5 -> "Friday"
+      6 -> "Saturday"
+      7 -> "Sunday"
+    end
   end
 end
