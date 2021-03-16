@@ -93,13 +93,25 @@ defmodule ApertivoWeb.HappyHourLive.Index do
   end
 
   def handle_event("filter", %{"filter" => filter}, socket) do
-    %{"day" => day} = filter
+    socket =
+      socket
+      |> assign(:visible_results, filter_by_day(socket.assigns.all_results, filter["day"]))
 
     {:noreply, socket}
   end
 
   defp list_happy_hours do
     HappyHours.list_happy_hours()
+  end
+
+  defp filter_by_day(all, day) do
+    Enum.filter(all, fn hh ->
+      Enum.any?(hh.schedule, &schedule_has_day?(&1, day))
+    end)
+  end
+
+  defp schedule_has_day?(schedule, day) do
+    Enum.any?(schedule["days"], &(&1 == day))
   end
 
   defp filter_results(all, bounds) do
