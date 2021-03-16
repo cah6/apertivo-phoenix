@@ -119,7 +119,7 @@ function makeInfoWindow(item) {
   // Can style normally for the most part, but remember that the gmaps classes
   // apply some inline styles that might make it appear different.
   return `
-<box-l style="--borderWidth: 0px; --padding: 0.5rem">
+<box-l style="--borderWidth: 0px; --padding: 1rem">
   <h3>${item.restaurant}</h3>
   ${makeDayList(daysActive)}
 </box-l>
